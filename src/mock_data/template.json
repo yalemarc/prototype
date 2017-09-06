@@ -1,0 +1,91 @@
+{
+  "pathway":[
+    [ {
+      "type": "overview",
+      "active": true,
+      "statement": "Overview",
+      "id": "01",
+      "ref": "0",
+      "questions" : [
+        {
+          "question": "Is this Interactive Clinical Guideline appropriate for this patient?",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "Yes", "value": false, "id":"01-100", "warning":false},
+            {"label": "No", "value": false, "id": "01-0", "warning":true}
+          ],
+          "content": "<h3>Scope<\/h3>\r\n   This Interactive Clinical Guideline will help guide clinicians in the evaluation of adults with acute, non-traumatic low back pain. The evaluation may include a trial of conservative therapy, imaging of the lumbar spine, and\/or evaluation of serum inflammatory markers. Choosing the correct approach depends on the patient's presentation and risk factors for malignancy, infection, and vertebral compression fractures.\r\n   <h3>Exclusions<\/h3>\r\n   This Interactive Clinical Guideline <strong>is not<\/strong> appropriate for patients with any of the following exclusions:<br><ul><li>Pain present for >4 weeks<\/li><li>Age <18 years<\/li><li>Pregnant or breastfeeding<\/li><\/ul>\r\n   <h4>Required Tests<\/h4><br><br>No test results are required to answer the questions that will follow. However, if testing has already been done, the results will be taken into account. Relevant prior testing includes:\r\n   <ul>\r\n      <li>MRI of the lumbar spine<\/li>\r\n      <li>CT of the lumbar spine<\/li>\r\n      <li>Plain film of the lumbar spine<\/li>\r\n      <li>Erythrocyte sedimentation rate (ESR)<\/li>\r\n      <li>C-reactive protein (CRP)<\/li>\r\n   <\/ul>"
+            ,
+          "warning": "This Interactive Clinical Guideline is not appropriate for this patient because one or more exclusions are present. For additional information on the approach to patients not covered by this Interactive Clinical Guideline, please refer to <a href=''>Related UpToDate Content</a>. Close the browser tab to exit the Interactive Clinical Guideline"
+        }
+
+      ],
+      "disclaimer": "",
+      "updated": "01/09/2017"
+    } ],
+    [ {
+      "type": "start",
+      "active": false,
+      "statement": "",
+      "id": "100",
+      "response" : "Yes",
+      "ref": "01",
+      "questions": [
+        {
+          "question": "",
+          "summaryDescription": "",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "Yes", "value": false, "id": "100-200"},
+            {"label": "No", "value": false, "id": "100-201"}
+          ],
+          "content": "",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+    }, {
+      "type": "end",
+      "active": false,
+      "statement": "Plain film of the lumbar spine only/nNEXT.../n",
+      "response" : "",
+      "id": "301",
+      "ref": "400",
+      "questions": [
+      ],
+      "updated": ""
+    } , {
+      "type": "end",
+      "active": false,
+      "statement": "ESR and/or CRP, no imaging/nNEXT.../n",
+      "response" : "",
+      "id": "302",
+      "ref": "402",
+      "questions": [
+      ],
+      "updated": ""
+    }  , {
+      "type": "end",
+      "active": false,
+      "statement": "Plain film of the lumbar spine plus and ESR and/or CRP/nNEXT.../n",
+      "response" : "",
+      "id": "303",
+      "ref": "403",
+      "questions": [
+      ],
+      "updated": ""
+    } , {
+      "type": "end",
+      "active": false,
+      "statement": "MRI or CT scan of the lumbar spine (with or without an ESR, CRP, or plain spine film/nNEXT.../n",
+      "response" : "",
+      "id": "304",
+      "ref": "404",
+      "questions": [
+      ],
+      "updated": ""
+    }]
+  ]
+}

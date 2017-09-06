@@ -1,0 +1,886 @@
+{
+  "pathway":[
+    [ {
+      "type": "overview/n",
+      "active": true,
+      "statement": "Pathway scope, required tests,~warnings, and exclusions",
+      "status" : "active",
+      "extraWide": 20,
+      "id": "01",
+      "ref": "0",
+      "warning": "There are <strong>no warnings</strong> for this UpToDate Pathway",
+      "warnings": false,
+      "exclusions": "This Interactive Clinical Guideline <strong>is not</strong> appropriate for patients with any of the following exclusions:<br><ul><li>Pain present for >4 weeks</li><li>Age <18 years</li><li>Pregnant or breastfeeding</li><ul>",
+      "questions" : [
+        {
+          "question": "Is this Interactive Clinical Guideline appropriate for this patient?",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "Yes", "value": false, "id":"01-100", "warning":false},
+            {"label": "No", "value": false, "id": "01-0", "warning":true}
+          ],
+          "content": "<h3>Scope<\/h3>\r\n   This UpToDate Pathway will help guide initial management of a an untreated patient diagnosed with primary hypertension. This advice is applicable to both diabetic patients and nondiabetic patients.<br><br>Even if blood pressure can be controlled with a single agent, some patients are treated with multiple antihypertensive drugs to improve the prognosis of a comorbid condition (for example, patients who have heart failure with reduced ejection fraction). However, this UpToDate Pathway provides guidance only on our preferred initial treatment; additional medications can subsequently added to improve prognosis in these patients, or if blood pressure is not controlled with initial treatment. <\/ul>"
+            ,
+          "requiredTests": [
+            {"label": "Estimate of urine protein excretion such as a urine dipstick for albumin or a quantitative assessment (eg, albumin-to-creatinine ratio or protein-to-creatinine ratio); a quantitative assessment is not required if a dipstick is negative for albumin, but should be performed if the dipstick is positive", "type":"list"},
+            {"label": "Serum potassium concentration", "type":"list"},
+            {"label": "Serum creatinine (with estimated glomerular filtration rate)", "type":"list"}
+          ],
+          "requiredTestsDisclaimer": "The following test results may be required to answer the questions that will follow:",
+          "warning": "This Interactive Clinical Guideline is not appropriate for this patient because one or more exclusions are present. For additional information on the approach to patients not covered by this Interactive Clinical Guideline, please refer to <a href=''>Related UpToDate Content</a>. Close the browser tab to exit the Interactive Clinical Guideline",
+          "warningMessage": "If a hypertensive emergency is suspected or if the blood pressure is severely elevated and the patient has risk factors for severe bleeding, refer the patient to the emergency department. See the exclusion criteria below for details on factors that suggest a hypertensive emergency and risk factors for severe bleeding.",
+          "warnings": true,
+          "exclusions": "This Interactive Clinical Guideline <strong>is not</strong> appropriate for patients with any of the following exclusions:<br><ul><li>Pain present for >4 weeks</li><li>Age <18 years</li><li>Pregnant or breastfeeding</li><ul>",
+          "exclusionList": [
+            {"label": "Age <18 years","trigger":"age","exclude": false, "type":"label" },
+            {"label": "Pregnant or breastfeeding","trigger":"pregnant","exclude": false, "type":"label" },
+            {"label": "Already taking antihypertensive medication", "trigger":"age","exclude": true, "type":"sub-header" },
+            {"label": "Angiotensin converting enzyme (ACE) inhibitor (eg, lisinopril, ramipril, benazepril)", "trigger":"age","exclude": false, "type":"sub-item"},
+            {"label": "Angiotensin receptor blocker (eg, valsartan, losartan, irbesartan)", "trigger":"age","exclude": false, "type":"sub-item"},
+            {"label": "Beta-blocker (eg, metoprolol, atenolol, labetalol)", "trigger":"age","exclude": false, "type":"sub-item"},
+            {"label": "Thiazide or loop diuretic (eg, HCTZ, chlorthalidone, furosemide)", "trigger":"age","exclude": false, "type":"sub-item"},
+            {"label": "Calcium channel blocker (eg, amlodipine, felodipine, diltiazem, verapamil)", "trigger":"age","exclude": false, "type":"sub-item"},
+            {"label": "Alpha adrenergic antagonist (eg, prazosin, terazosin)", "trigger":"age","exclude": false, "type":"sub-item"},
+            {"label": "Centrally acting alpha agonist (eg, clonidine)", "trigger":"age","exclude": false, "type":"sub-item"},
+            {"label": "Direct vasodilator (eg, hydralazine, minoxidil)", "trigger":"age","exclude": false, "type":"sub-item"},
+            {"label": "Severe hypertension (systolic pressure ≥180 mmHg and/or diastolic pressure ≥120 mmHg), or an acute rise in blood pressure above baseline, plus a factor suggesting a hypertensive emergency", "trigger":"age","exclude": true, "type":"sub-header"},
+            {"label": "An acute head injury or head trauma", "trigger":"age","exclude": false, "type":"sub-item"},
+            {"label": "Generalized neurological symptoms such as delirium, stupor, seizures, or new visual disturbances", "trigger":"age","exclude": false, "type":"sub-item"},
+            {"label": "Severe hypertensive retinopathy by direct fundoscopy (exudates, flame hemorrhages, papilledema)", "trigger":"age","exclude": false, "type":"sub-item"},
+            {"label": "New onset of nausea and vomitin", "trigger":"age","exclude": false, "type":"sub-item"},
+            {"label": "Acute chest pain", "trigger":"age","exclude": false, "type":"sub-item"},
+            {"label": "Acute, severe back pain", "trigger":"age","exclude": false, "type":"sub-item"},
+            {"label": "Recent use of cocaine, amphetamine(s), phencyclidine, or a monoamine oxidase inhibitor", "trigger":"age","exclude": false, "type":"sub-item"},
+            {"label": "Combination of severely elevated blood pressure (systolic pressure ≥180 mmHg and/or diastolic pressure ≥120 mmHg) plus a risk factor for severe bleeding", "trigger":"age","exclude": true, "type":"sub-header"},
+            {"label": "Known intracerebral aneurysm", "trigger":"age","exclude": false, "type":"sub-item"},
+            {"label": "Prior intracranial hemorrhage", "trigger":"age","exclude": false, "type":"sub-item"},
+            {"label": "Known abdominal or thoracic aortic aneurysm", "trigger":"age","exclude": false, "type":"sub-item"},
+            {"label": "Prior aortic dissection", "trigger":"age","exclude": false, "type":"sub-item"}
+
+          ]
+        }
+
+      ],
+      "disclaimer": "",
+      "updated": "01/09/2017"
+    } ] , [ {
+      "type": "start",
+      "active": false,
+      "statement": "Myocardial infarction (MI)~in the last three years?",
+      "status" : "off",
+      "id": "100",
+      "ref": "01",
+      "extraWide": 0,
+      "questions": [
+        {
+          "question": "Has the patient had a myocardial infarction within the past three years?",
+          "summaryDescription": "",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "Yes", "value": false, "id": "100-200"},
+            {"label": "No", "value": false, "id": "100-201"}
+          ],
+          "content":"",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+    } ] , [ {
+      "type": "continue",
+      "active": false,
+      "statement": "Drug choice in those~with recent MI",
+      "status" : "off",
+      "id": "200",
+      "ref": "100",
+      "response": "Yes",
+      "extraWide": 0,
+      "questions": [
+        {
+          "question": "Is the systolic pressure ≥160 mmHg and/or is the diastolic pressure ≥100 mmHg?",
+          "summaryDescription": "",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "Yes", "value": false, "id": "200-300"},
+            {"label": "No", "value": false, "id": "200-301"}
+          ],
+          "content":"",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+    } , {
+      "type": "question",
+      "active": false,
+      "statement": "History of~heart failure (HF)?",
+      "status" : "off",
+      "id": "201",
+      "ref": "100",
+      "response": "No",
+      "extraWide": 0,
+      "specialWidth": 2,
+      "questions": [
+        {
+          "question": "Does the patient have a know history of heart failure?",
+          "summaryDescription": "",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "Yes", "value": false, "id": "201-300"},
+            {"label": "No", "value": false, "id": "201-301"}
+          ],
+          "content":"",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+    } ], [ {
+      "type": "question",
+      "active": false,
+      "statement": "SBP ≥160 mmHg or~DBP ≥100 mmHg?",
+      "status" : "off",
+      "id": "300",
+      "ref": "201",
+      "response": "Yes",
+      "questions": [
+        {
+          "question": "Is the systolic pressure ≥160 mmHg and/or is the diastolic pressure ≥100 mmHg?",
+          "summaryDescription": "",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "Yes", "value": false, "id": "300-400"},
+            {"label": "No", "value": false, "id": "300-401"}
+          ],
+          "content":"",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+    } , {
+      "type": "question",
+      "active": false,
+      "statement": "Proteinuria",
+      "status" : "off",
+      "specialWidth": 3,
+      "id": "301",
+      "ref": "201",
+      "response": "No",
+      "questions": [
+        {
+          "question": "Does the patient have proteinuria (estimated or measured urine protein excretion ≥500 mg/d or urine albumin excretion ≥300 mg/d)?",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "Yes", "value": false, "id": "301-403"},
+            {"label": "No", "value": false, "id": "301-404"}
+          ],
+          "content":"A urine dispstick that is negative for albumin is sufficient to exclude the presence of proteinuria for the purposes of this UpToDate Pathway.",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+    } ], [
+      {
+        "type": "continue",
+        "active": false,
+        "statement": "Drug choice in HF~and stage 2 hypertension",
+        "status" : "off",
+        "id": "400",
+        "ref": "300",
+        "response": "Yes",
+        "questions": [
+          {
+            "question": "Does the patient have signs or symptoms of hypervolemia, such as pulmonary edema, peripheral edema, or elevated jugular venous pressure?",
+            "active": true,
+            "optionType": "single",
+            "options": [
+              {"label": "Yes", "value": false, "id": "400-500"},
+              {"label": "No", "value": false, "id": "400-501"}
+            ],
+            "content":"",
+            "disclaimer": ""
+          }
+        ],
+        "updated": ""
+      }, {
+        "type": "continue",
+        "active": false,
+        "statement": "Drug choice in HF~and stage 1 hypertension",
+        "status" : "off",
+        "id": "401",
+        "ref": "300",
+        "response": "No",
+        "questions": [
+          {
+            "question": "Does the patient have signs or symptoms of hypervolemia, such as pulmonary edema, peripheral edema, or elevated jugular venous pressure?",
+            "active": true,
+            "optionType": "single",
+            "options": [
+              {"label": "Yes", "value": false, "id": "200-300"},
+              {"label": "No", "value": false, "id": "200-301"}
+            ],
+            "content":"",
+            "disclaimer": ""
+          }
+        ],
+        "updated": ""
+      } , {
+        "type": "continue",
+        "active": false,
+        "statement": "Drug choice in those~with proteinura",
+        "status" : "off",
+        "id": "402",
+        "ref": "301",
+        "response": "Yes",
+        "questions": [
+          {
+            "question": "Does the patient have signs or symptoms of hypervolemia, such as pulmonary edema, peripheral edema, or elevated jugular venous pressure?",
+            "active": true,
+            "optionType": "single",
+            "options": [
+              {"label": "Yes", "value": false, "id": "200-300"},
+              {"label": "No", "value": false, "id": "200-301"}
+            ],
+            "content":"",
+            "disclaimer": ""
+          }
+        ],
+        "updated": ""
+      } , {
+        "type": "continue",
+        "active": false,
+        "statement": "Drug choice in those~with no comorbidity",
+        "status" : "off",
+        "id": "403",
+        "ref": "301",
+        "response": "Yes",
+        "questions": [
+          {
+            "question": "Does the patient have signs or symptoms of hypervolemia, such as pulmonary edema, peripheral edema, or elevated jugular venous pressure?",
+            "active": true,
+            "optionType": "single",
+            "options": [
+              {"label": "Yes", "value": false, "id": "200-300"},
+              {"label": "No", "value": false, "id": "200-301"}
+            ],
+            "content":"",
+            "disclaimer": ""
+          }
+        ],
+        "updated": ""
+      }
+
+    ]
+
+  ],
+  "mainTitle" : "Hypertension: Initial management",
+  "subLevels" : [{
+    "sublevel-400": [
+      [{
+        "type": "subLevel",
+        "active": true,
+        "statement":"Hypervolemia~present?",
+        "status" : "active",
+        "response" : "",
+        "id": "500",
+        "ref": "400",
+        "questions": [
+          {
+            "question": "Does the patient have signs or symptoms of hypervolemia, such as pulmonary edema, peripheral edema, or elevated jugular venous pressure?",
+            "summaryDescription": "",
+            "active": true,
+            "optionType": "single",
+            "options": [
+              {"label": "Yes", "value": false, "id": "500-600"},
+              {"label": "No", "value": false, "id": "500-601"}
+            ],
+            "content": "",
+            "disclaimer": ""
+          }
+        ],
+        "updated": ""
+      }] , [{
+        "type": "question",
+        "active": false,
+        "statement": "Ejection fraction~reduced?",
+        "status" : "off",
+        "response" : "Yes",
+        "extraWide": 0,
+        "specialWidth": 4,
+        "id": "600",
+        "ref": "500",
+        "questions": [
+          {
+            "question": "Is the ejection fraction reduced (ie, ≤40%)?",
+            "summaryDescription": "Risk factors for antibiotic resistance:",
+            "active": true,
+            "optionType": "single",
+            "options": [
+              {"label": "yes", "value": false, "id": "600-700"},
+              {"label": "no", "value": false, "id": "600-701"}
+            ],
+            "content": "",
+            "disclaimer": ""
+          }
+        ]
+      }, {
+        "type": "question",
+        "active": false,
+        "statement": "Ejection fraction~reduced?",
+        "status" : "off",
+        "response" : "No",
+        "extraWide": 0,
+        "specialWidth": 4,
+        "id": "601",
+        "ref": "500",
+        "questions": [
+          {
+            "question": "Is the ejection fraction reduced (ie, ≤40%)?",
+            "summaryDescription": "Risk factors for antibiotic resistance:",
+            "active": true,
+            "optionType": "single",
+            "options": [
+              {"label": "Yes", "value": false, "id": "601-702"},
+              {"label": "No", "value": false, "id": "601-703"}
+            ],
+            "content": "",
+            "disclaimer": ""
+          }
+        ]
+      }], [{
+          "type": "end",
+          "active": false,
+          "statement": "Loop diuretic and~ACE-inhibitor",
+          "status" : "off",
+          "response" : "Yes",
+          "num": 1,
+          "id": "700",
+          "ref": "600",
+          "questions": [
+            {
+              "question": "Choose a loop diuretic.",
+              "summaryDescription": "Risk factors for antibiotic resistance:",
+              "active": true,
+              "optionType": "single",
+              "options": [
+                {"label": "Furosemide 20 mg orally once daily", "value": false, "id": "700-question-1,2-1"},
+                {"label": "Furosemide 40 mg orally once daily", "value": false, "id": "700-question-1,2-2"},
+                {"label": "Furosemide 80 mg orally once daily", "value": false, "id": "700-question-1,2-3"},
+                {"label": "Torsemide 5 mg orally once daily", "value": false, "id": "700-question-1,2-4"},
+                {"label": "Torsemide 10 mg orally once daily", "value": false, "id": "700-question-1,2-5"},
+                {"label": "Torsemide 20 mg orally once daily", "value": false, "id": "700-question-1,2-6"},
+                {"label": "Bumetanide 0.5 mg orally once daily", "value": false, "id": "700-question-1,2-7"},
+                {"label": "Bumetanide 1 mg orally once daily", "value": false, "id": "700-question-1,2-8"},
+                {"label": "Bumetanide 2 mg orally once daily", "value": false, "id": "700-question-1,2-9"},
+                {"label": "Ethacrynic acid 25 mg orally once daily", "value": false, "id": "700-question-1,2-10"},
+                {"label": "Ethacrynic acid 50 mg orally once daily", "value": false, "id": "700-question-1,2-11"},
+                {"label": "Medication other than a loop diuretic or a loop diuretic at a dose or frequency other than the options provided", "value": false, "id": "700-question-1,2-12"}
+              ],
+              "content": "<strong>Initiate combination therapy with a loop diuretic and an ACE-inhibitor.</strong><br><br>The combination of a loop diuretic and an ACE-inhibitor is useful in hypervolemic patients who have heart failure with reduced ejection fraction, and also in selected hypervolemic patients with proteinuria. In both patient groups, diuretics are used to treat symptoms of hypervolemia, and ACE-inhibitors are used to improve outcomes. This combination can also be used in hypervolemic patients who have heart failure with preserved ejection fraction when a mineralocorticoid receptor antagonist should be avoided. In untreated patients with stage 2 hypertension, both drugs can be initiated simultaneously.<br><br>The choice of which loop diuretic and ACE-inhibitor to use depends upon factors such as cost and insurance coverage, dosing frequency and convenience for the patient, and the clinician's familiarity with the different agents. Patients with heart failure and impaired kidney function typically require higher doses of loop diuretic than patients without these conditions in order to attain the same diuretic response.<br><br>In some patients, an ARB (or a combination ARB and neprilysin inhibitor), is used instead of an ACE-inhibitor.<br><br><i>The drug doses given generally represent the doses that are suggested for patients who do not require dose adjustments due to factors such as comorbid illnesses, organ dysfunction, drug interactions, or other reasons. Consult a clinical drug reference, appropriate UpToDate topic reviews, and/or other resources to confirm the appropriate dosing for a given patient.</i>",
+              "disclaimer": ""
+            },{
+              "question": "Choose one ACE-inhibitor.",
+              "summaryDescription": "Risk factors for antibiotic resistance:",
+              "active": false,
+              "optionType": "single",
+              "num": 2,
+              "options": [
+                {"label": "Benazepril 10 mg orally once daily", "value": false, "id": "700-summary-1"},
+                {"label": "Enalapril 5 mg orally daily", "value": false, "id": "700-summary-2"},
+                {"label": "Enalapril 10 mg orally daily", "value": false, "id": "700-summary-3"},
+                {"label": "Fosinopril 10 mg orally daily", "value": false, "id": "700-summary-4"},
+                {"label": "Lisinopril 10 mg orally daily", "value": false, "id": "700-summary-5"},
+                {"label": "Moexipril 7.5 mg orally daily", "value": false, "id": "700-summary-6"},
+                {"label": "Perindopril 4 mg orally daily", "value": false, "id": "700-summary-7"},
+                {"label": "Quinapril 10 mg orally daily", "value": false, "id": "700-summary-8"},
+                {"label": "Ramipril 2.5 mg orally daily", "value": false, "id": "700-summary-9"},
+                {"label": "Trandolapril 1 mg orally daily", "value": false, "id": "700-summary-10"}
+              ],
+              "content": "",
+              "disclaimer": ""
+            }]
+            } , {
+          "type": "question",
+          "active": false,
+          "statement": "Low serum~potassium",
+          "status" : "off",
+          "response" : "No",
+          "id": "701",
+          "ref": "600",
+          "questions": [
+            {
+              "question": "Does the patient have hypokalemia (frequently defined as a serum potassium <3.7 meq/L [mmol/L])?",
+              "summaryDescription": "Risk factors for antibiotic resistance:",
+              "active": true,
+              "optionType": "single",
+              "options": [
+                  {"label": "Yes", "value": false, "id": "701-800"},
+                  {"label": "No", "value": false, "id": "701-801"}
+                ],
+              "content": "",
+              "disclaimer": ""
+            }
+          ]
+        } , {
+          "type": "question",
+          "active": false,
+          "statement": "Hyperkalemia?",
+          "status" : "off",
+          "response" : "Yes",
+          "specialWidth":1.6,
+          "id": "702",
+          "ref": "601",
+          "questions": [
+            {
+              "question": "Choose a loop diuretic.",
+              "summaryDescription": "Risk factors for antibiotic resistance:",
+              "active": true,
+              "optionType": "single",
+              "options": [
+                {"label": "Furosemide 20 mg orally once daily", "value": false, "id": "700-702"},
+                {"label": "Furosemide 40 mg orally once daily", "value": false, "id": "700-703"},
+                {"label": "Furosemide 80 mg orally once daily", "value": false, "id": "700-703"},
+                {"label": "Torsemide 5 mg orally once daily", "value": false, "id": "700-703"},
+                {"label": "Torsemide 10 mg orally once daily", "value": false, "id": "700-703"},
+                {"label": "Torsemide 20 mg orally once daily", "value": false, "id": "700-703"},
+                {"label": "Bumetanide 0.5 mg orally once daily", "value": false, "id": "700-703"},
+                {"label": "Bumetanide 1 mg orally once daily", "value": false, "id": "700-703"},
+                {"label": "Bumetanide 2 mg orally once daily", "value": false, "id": "700-703"},
+                {"label": "Ethacrynic acid 25 mg orally once daily", "value": false, "id": "700-703"},
+                {"label": "Ethacrynic acid 50 mg orally once daily", "value": false, "id": "700-703"},
+                {"label": "Medication other than a loop diuretic or a loop diuretic at a dose or frequency other than the options provided", "value": false, "id": "700-703"}
+              ],
+              "content": "",
+              "disclaimer": ""
+            }
+          ]
+        } , {
+          "type": "question",
+          "active": false,
+          "statement": "Low serum~potassium?",
+          "status" : "off",
+          "response" : "No",
+          "specialWidth":2.8,
+          "id": "703",
+          "ref": "601",
+          "questions": [
+            {
+              "question": "Does the patient have hypokalemia (frequently defined as a serum potassium <3.7 meq/L [mmol/L])?",
+              "summaryDescription": "Risk factors for antibiotic resistance:",
+              "active": true,
+              "optionType": "single",
+              "options": [
+                {"label": "Furosemide 20 mg orally once daily", "value": false, "id": "700-702"},
+                {"label": "Furosemide 40 mg orally once daily", "value": false, "id": "700-703"},
+                {"label": "Furosemide 80 mg orally once daily", "value": false, "id": "700-703"},
+                {"label": "Torsemide 5 mg orally once daily", "value": false, "id": "700-703"},
+                {"label": "Torsemide 10 mg orally once daily", "value": false, "id": "700-703"},
+                {"label": "Torsemide 20 mg orally once daily", "value": false, "id": "700-703"},
+                {"label": "Bumetanide 0.5 mg orally once daily", "value": false, "id": "700-703"},
+                {"label": "Bumetanide 1 mg orally once daily", "value": false, "id": "700-703"},
+                {"label": "Bumetanide 2 mg orally once daily", "value": false, "id": "700-703"},
+                {"label": "Ethacrynic acid 25 mg orally once daily", "value": false, "id": "700-703"},
+                {"label": "Ethacrynic acid 50 mg orally once daily", "value": false, "id": "700-703"},
+                {"label": "Medication other than a loop diuretic or a loop diuretic at a dose or frequency other than the options provided", "value": false, "id": "700-703"}
+              ],
+              "content": "",
+              "disclaimer": ""
+            }
+          ]
+      }] , [{
+          "type": "end",
+          "active": false,
+          "statement": "Loop diuretic~and MRA",
+          "status" : "off",
+          "response" : "Yes",
+          "specialWidth": ".75",
+          "id": "800",
+          "ref": "701",
+          "questions": [
+            {
+              "question": "",
+              "summaryDescription": "Risk factors for antibiotic resistance:",
+              "active": true,
+              "optionType": "single",
+              "options": [
+                {"label": "Furosemide 20 mg orally once daily", "value": false, "id": "800-question-1,2-1"},
+                {"label": "Furosemide 40 mg orally once daily", "value": false, "id": "800-question-1,2-2"},
+                {"label": "Furosemide 80 mg orally once daily", "value": false, "id": "800-question-1,2-3"},
+                {"label": "Torsemide 5 mg orally once daily", "value": false, "id": "800-question-1,2-4"},
+                {"label": "Torsemide 10 mg orally once daily", "value": false, "id": "800-question-1,2-5"},
+                {"label": "Torsemide 20 mg orally once daily", "value": false, "id": "800-question-1,2-6"},
+                {"label": "Bumetanide 0.5 mg orally once daily", "value": false, "id": "800-question-1,2-7"},
+                {"label": "Bumetanide 1 mg orally once daily", "value": false, "id": "800-question-1,2-8"},
+                {"label": "Bumetanide 2 mg orally once daily", "value": false, "id": "800-question-1,2-9"},
+                {"label": "Ethacrynic acid 25 mg orally once daily", "value": false, "id": "800-question-1,2-10"},
+                {"label": "Ethacrynic acid 50 mg orally once daily", "value": false, "id": "800-question-1,2-11"},
+                {"label": "Medication other than a loop diuretic or a loop diuretic at a dose or frequency other than the options provided", "value": false, "id": "800-question-1,2-12"}
+              ],
+              "content": "<strong>Initiate combination therapy with a loop diuretic and mineralocorticoid receptor antagonist.</strong><br><br>Mineralocorticoid receptor antagonists reduce death and cardiovascular events in patients who have heart failure with preserved ejection fraction. Thus, UpToDate suggests treating with this drug class in such patients, provided they are not at high risk for hyperkalemia. In addition, hypervolemic patients with heart failure should receive a loop diuretic to reduce edema.<br><br>The choice of which loop diuretic and mineralocorticoid receptor antagonist to use depends upon factors such as cost and insurance coverage, dosing frequency and convenience for the patient, and the clinician's familiarity with the different agents.<br><br>If several starting doses for a drug are listed, the dose selected should depend in part upon the severity of the blood pressure elevation as well as concerns about side effects. In addition, patients with heart failure and impaired kidney function typically require higher doses of loop diuretic than patients without these conditions in order to attain the same diuretic response.<br><br><i>The drug doses given generally represent the doses that are suggested for patients who do not require dose adjustments due to factors such as comorbid illnesses, organ dysfunction, drug interactions, or other reasons. Consult a clinical drug reference, appropriate UpToDate topic reviews, and/or other resources to confirm the appropriate dosing for a given patient.</i>",
+              "disclaimer": ""
+            } , {
+              "question": "Choose one ACE-inhibitor.",
+              "summaryDescription": "Risk factors for antibiotic resistance:",
+              "active": false,
+              "optionType": "single",
+              "num": 2,
+              "options": [
+                {"label": "Benazepril 10 mg orally once daily", "value": false, "id": "700-summary-1"},
+                {"label": "Enalapril 5 mg orally daily", "value": false, "id": "800-summary-2"},
+                {"label": "Enalapril 10 mg orally daily", "value": false, "id": "800-summary-3"},
+                {"label": "Fosinopril 10 mg orally daily", "value": false, "id": "800-summary-4"},
+                {"label": "Lisinopril 10 mg orally daily", "value": false, "id": "800-summary-5"},
+                {"label": "Moexipril 7.5 mg orally daily", "value": false, "id": "800-summary-6"},
+                {"label": "Perindopril 4 mg orally daily", "value": false, "id": "800-summary-7"},
+                {"label": "Quinapril 10 mg orally daily", "value": false, "id": "800-summary-8"},
+                {"label": "Ramipril 2.5 mg orally daily", "value": false, "id": "800-summary-9"},
+                {"label": "Trandolapril 1 mg orally daily", "value": false, "id": "800-summary-10"}
+              ],
+              "content": "",
+              "disclaimer": ""
+            }
+          ]
+        } , {
+          "type": "question",
+          "active": false,
+          "statement": "Serum K <4.6 and~eGFR ≥45?",
+          "status" : "off",
+          "specialWidth": ".75",
+          "response" : "No",
+          "id": "801",
+          "ref": "701",
+          "questions": [
+            {
+              "question": "",
+              "summaryDescription": "Risk factors for antibiotic resistance:",
+              "active": true,
+              "optionType": "single",
+              "options": [
+
+              ],
+              "content": "",
+              "disclaimer": ""
+            }
+          ]
+        } , {
+          "type": "question",
+          "active": false,
+          "statement": "Contraindications~to beta blocker?",
+          "status" : "off",
+          "specialWidth": 1.5,
+          "response" : "Yes",
+          "id": "802",
+          "ref": "702",
+          "questions": [
+            {
+              "question": "",
+              "summaryDescription": "Risk factors for antibiotic resistance:",
+              "active": true,
+              "optionType": "single",
+              "options": [
+
+              ],
+              "content": "",
+              "disclaimer": ""
+            }
+          ]
+        } , {
+          "type": "question",
+          "active": false,
+          "statement": "Contraindication~to beta blocker?",
+          "status" : "off",
+          "specialWidth": 2,
+          "response" : "No",
+          "id": "803",
+          "ref": "702",
+          "questions": [
+            {
+              "question": "",
+              "summaryDescription": "Risk factors for antibiotic resistance:",
+              "active": true,
+              "optionType": "single",
+              "options": [
+
+              ],
+              "content": "",
+              "disclaimer": ""
+            }
+          ]
+        } , {
+          "type": "question",
+          "active": false,
+          "statement": "Ace-inhibitor~and MRA",
+          "status" : "off",
+          "specialWidth": ".75",
+          "response" : "Yes",
+          "id": "804",
+          "ref": "703",
+          "questions": [
+            {
+              "question": "",
+              "summaryDescription": "Risk factors for antibiotic resistance:",
+              "active": true,
+              "optionType": "single",
+              "options": [
+
+              ],
+              "content": "",
+              "disclaimer": ""
+            }
+          ]
+        } , {
+          "type": "question",
+          "active": false,
+          "statement": "Serum K <4.6 and~eGFR ≥45?",
+          "status" : "off",
+          "specialWidth": 1.3,
+          "response" : "No",
+          "id": "805",
+          "ref": "703",
+          "questions": [
+            {
+              "question": "",
+              "summaryDescription": "Risk factors for antibiotic resistance:",
+              "active": true,
+              "optionType": "single",
+              "options": [
+
+              ],
+              "content": "",
+              "disclaimer": ""
+            }
+          ]
+      }] , [{
+          "type": "question",
+          "active": false,
+          "statement": "Loop diuretic~and MRA",
+          "status" : "off",
+          "specialWidth": ".75",
+          "response" : "Yes",
+          "id": "900",
+          "ref": "801",
+          "questions": [
+            {
+              "question": "",
+              "summaryDescription": "Risk factors for antibiotic resistance:",
+              "active": true,
+              "optionType": "single",
+              "options": [
+
+              ],
+              "content": "",
+              "disclaimer": ""
+            }
+          ]
+        } , {
+          "type": "question",
+          "active": false,
+          "statement": "Loop diuretic and~ACE-inhibitor",
+          "status" : "off",
+          "specialWidth": ".75",
+          "response" : "No",
+          "id": "901",
+          "ref": "801",
+          "questions": [
+            {
+              "question": "",
+              "summaryDescription": "Risk factors for antibiotic resistance:",
+              "active": true,
+              "optionType": "single",
+              "options": [
+
+              ],
+              "content": "",
+              "disclaimer": ""
+            }
+          ]
+        } , {
+          "type": "question",
+          "active": false,
+          "statement": "Hydralazine plus nitrate~and thiazide-like diuretic",
+          "status" : "off",
+          "specialWidth": ".75",
+          "response" : "No",
+          "id": "902",
+          "ref": "802",
+          "questions": [
+            {
+              "question": "",
+              "summaryDescription": "Risk factors for antibiotic resistance:",
+              "active": true,
+              "optionType": "single",
+              "options": [
+
+              ],
+              "content": "",
+              "disclaimer": ""
+            }
+          ]
+        } , {
+          "type": "question",
+          "active": false,
+          "statement": "Beta blocker plus either~hydralazine and nitrate or thiazide",
+          "status" : "off",
+          "specialWidth": "1",
+          "extraWide": 20,
+          "response" : "No",
+          "id": "903",
+          "ref": "802",
+          "questions": [
+            {
+              "question": "",
+              "summaryDescription": "Risk factors for antibiotic resistance:",
+              "active": true,
+              "optionType": "single",
+              "options": [
+
+              ],
+              "content": "",
+              "disclaimer": ""
+            }
+          ]
+        } , {
+          "type": "question",
+          "active": false,
+          "statement": "ACE-inhibitor and~thiazide-like diuretic",
+          "status" : "off",
+          "specialWidth": ".75",
+          "extraWide": 10,
+          "response" : "Yes",
+          "id": "904",
+          "ref": "803",
+          "questions": [
+            {
+              "question": "",
+              "summaryDescription": "Risk factors for antibiotic resistance:",
+              "active": true,
+              "optionType": "single",
+              "options": [
+
+              ],
+              "content": "",
+              "disclaimer": ""
+            }
+          ]
+        } , {
+          "type": "question",
+          "active": false,
+          "statement": "Beta blocker and~ACE-inhibitor",
+          "status" : "off",
+          "specialWidth": "1",
+          "extraWide": 0,
+          "response" : "No",
+          "id": "905",
+          "ref": "803",
+          "questions": [
+            {
+              "question": "",
+              "summaryDescription": "Risk factors for antibiotic resistance:",
+              "active": true,
+              "optionType": "single",
+              "options": [
+
+              ],
+              "content": "",
+              "disclaimer": ""
+            }
+          ]
+        } , {
+          "type": "question",
+          "active": false,
+          "statement": "Thiazide-like diuretic~and MRA",
+          "status" : "off",
+          "specialWidth": ".75",
+          "extraWide": 0,
+          "response" : "Yes",
+          "id": "906",
+          "ref": "805",
+          "questions": [
+            {
+              "question": "",
+              "summaryDescription": "Risk factors for antibiotic resistance:",
+              "active": true,
+              "optionType": "single",
+              "options": [
+
+              ],
+              "content": "",
+              "disclaimer": ""
+            }
+          ]
+        } , {
+          "type": "question",
+          "active": false,
+          "statement": "eGFR ≥45 mL/min/~1.73 m2?",
+          "status" : "off",
+          "specialWidth": ".75",
+          "extraWide": 0,
+          "response" : "No",
+          "id": "907",
+          "ref": "805",
+          "questions": [
+            {
+              "question": "",
+              "summaryDescription": "Risk factors for antibiotic resistance:",
+              "active": true,
+              "optionType": "single",
+              "options": [
+
+              ],
+              "content": "",
+              "disclaimer": ""
+            }
+          ]
+      }] , [{
+          "type": "question",
+          "active": false,
+          "statement": "Select therapy",
+          "status" : "off",
+          "specialWidth": ".75",
+          "extraWide": 0,
+          "response" : "Yes",
+          "id": "1000",
+          "ref": "907",
+          "questions": [
+            {
+              "question": "",
+              "summaryDescription": "Risk factors for antibiotic resistance:",
+              "active": true,
+              "optionType": "single",
+              "options": [
+
+              ],
+              "content": "",
+              "disclaimer": ""
+            }
+          ]
+        } , {
+          "type": "question",
+          "active": false,
+          "statement": "Select therapy",
+          "status" : "off",
+          "specialWidth": ".75",
+          "extraWide": 0,
+          "response" : "No",
+          "id": "1001",
+          "ref": "907",
+          "questions": [
+            {
+              "question": "",
+              "summaryDescription": "Risk factors for antibiotic resistance:",
+              "active": true,
+              "optionType": "single",
+              "options": [
+
+              ],
+              "content": "",
+              "disclaimer": ""
+            }
+          ]
+      }]
+    ]
+  }]
+}

@@ -1,0 +1,57 @@
+
+<div id="icg-main-panel">
+  <top-bar top-title="mainTitle"
+    show-top-links="true"
+    show-mobile="showMobile"
+    show-mobile-band="showMobileBand">
+  </top-bar>
+  <view-settings >
+  </view-settings>
+  <slideout-panel
+    close-slideout="closeSlideout()"
+    slideout-contents = "slideoutContents"
+    slideout-title = "slideoutTitle"
+    slideout-warning = "slideoutWarning"
+    slideout-exclusions = "slideoutExclusions"
+    warnings = "warnings">
+  </slideout-panel>
+  <side-panel id="icg-side-bar"
+    otherData="'hello world!'"
+    icg-data = "icgdata"
+    resize-start = "startResize()"
+    resize-stop = "stopResize()"
+    up-to-date-disclaimer="upToDatePolicy"
+    show-side-disclaimer="showSideDisclaimer"
+    topbar-title = "mainTitle"
+    show-mobile-band="showMobileBand"
+    show-band="showMobileBand">
+  </side-panel>
+  <algor
+    icg-data = "icgdata"
+    ck-warning="checkWarning()"
+    ng-if="!showAlg">
+  </algor>
+  <question-component
+    closeq = "mainPanel.closeQuestion()"
+    ng-show="mainPanel.showQuestion">
+  </question-component>
+  <main-popup-modal
+    ng-show="showPopupModal"
+    modal-data="modalData"
+    icg-data = "icgdata">
+  </main-popup-modal
+    >
+  <ehr-data-modal
+    patient-data="patientEhrData" >
+  </ehr-data-modal>
+  <bottom-bar
+    show-disclaimer="showDisclaimer"
+    show-summary-links="showSummaryLinks" >
+  </bottom-bar>
+  <div id="icg-bottom-policy">
+    <div id="icg-bottom-policy-title">Disclaimer
+    <div class="icg-disclaimer-close-btn" ng-click="hideDisclaimer()"></div>
+    </div>
+    {{upToDatePolicy}}
+  </div>
+</div>

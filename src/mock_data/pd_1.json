@@ -1,0 +1,57 @@
+{
+  "patientData":[
+    {
+      "pathway":"108537",
+      "pathwayData": [
+        {
+          "node":"01",
+          "exclusions": ["stroke"],
+          "relevantData":[
+            {
+              "label":"Age",
+              "desc": "Patient is over 75"
+            },
+            {
+              "label": "Gender",
+              "desc": "Patient is female"
+            }
+          ]
+        },{
+          "node":"100",
+          "exclusions": "",
+          "questions": [
+            {
+              "question": 0,
+              "id": ["100-200"]
+            }
+          ],
+          "relevantData":[
+            {
+              "label":"Resistance",
+              "desc": "H. pylori resistance to clarithromycin is <15% "
+            },
+            {
+              "label": "Eradication",
+              "desc": " Eradication rates with triple therapy are >85%"
+            }
+          ]
+        },{
+          "node":"200",
+          "exclusions": "",
+          "questions": [
+            {
+              "question": 0,
+              "id": ["200-300"]
+            }
+          ],
+          "relevantData":[
+            {
+              "label": "Alergy",
+              "desc": "Allergic to Amoxicillin"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

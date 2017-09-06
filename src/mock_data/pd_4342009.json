@@ -1,0 +1,169 @@
+{
+  "patientData":[
+    {
+      "pathway":"107764",
+      "pathwayData": [
+        {
+          "node":"01",
+          "exclusions": ["pregnant","stroke"],
+          "relevantData":[
+            {
+              "label":"Pregnant",
+              "desc": "Patient is pregnant"
+            },
+            {
+              "label": "Stroke",
+              "desc": "Patient had stroke within 30 days"
+            }
+          ]
+        },{
+          "node":"50",
+          "exclusions": "",
+          "questions": [
+            {
+              "question": 0,
+              "id": ["01-calculator-2,2"]
+            },{
+              "question": 1,
+              "id": ["01-calculator-3,3"]
+            },{
+              "question": 2,
+              "id": ["01-calculator-4,6"]
+            }
+          ],
+          "relevantData":[
+            {
+              "label":"Age",
+              "desc": "Patient is under 18"
+            },
+            {
+              "label": "Gender",
+              "desc": "Patient is female"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pathway":"109113",
+      "pathwayData": [
+        {
+          "node":"01",
+          "exclusions": [],
+          "relevantData":[
+            {
+              "label":"Age",
+              "desc": "Patient is under 18"
+            },
+            {
+              "label": "Gender",
+              "desc": "Patient is male"
+            }
+          ]
+        } , {
+          "node":"100",
+          "exclusions": "",
+          "questions": [
+            {
+              "question": 1,
+              "id": ["100-201"]
+            }
+          ],
+          "relevantData":[
+            {
+              "label":"Age",
+              "desc": "Patient is under 18"
+            },
+            {
+              "label": "Gender",
+              "desc": "Patient is male"
+            }
+          ]
+        } , {
+          "node":"201",
+          "exclusions": "",
+          "questions": [
+            {
+              "question": 0,
+              "id": ["201-300"]
+            }
+          ],
+          "relevantData":[
+            {
+              "label":"Age",
+              "desc": "Patient is under 18"
+            },
+            {
+              "label": "Gender",
+              "desc": "Patient is male"
+            }
+          ]
+        } , {
+          "node":"300",
+          "exclusions": "",
+          "questions": [
+            {
+              "question": 0,
+              "id": ["300-400"]
+            }
+          ],
+          "relevantData":[
+
+          ]
+        }  , {
+          "node":"400",
+          "exclusions": "",
+          "questions": [
+            {
+              "question": 0,
+              "id": ["400-500"]
+            }
+          ],
+          "relevantData":[
+
+          ]
+        }, {
+          "node":"500",
+          "exclusions": "",
+          "questions": [
+            {
+              "question": 0,
+              "id": ["500-600"]
+            },
+            {
+              "question": 1,
+              "id": ["500-601"]
+            }
+          ],
+          "relevantData":[
+
+          ]
+        } , {
+          "node":"600",
+          "exclusions": "",
+          "questions": [
+            {
+              "question": 1,
+              "id": ["600-701"]
+            }
+          ],
+          "relevantData":[
+
+          ]
+        } , {
+          "node":"601",
+          "exclusions": "",
+          "questions": [
+            {
+              "question": 0,
+              "id": ["601-702"]
+            }
+          ],
+          "relevantData":[
+
+          ]
+        }
+      ]
+    }
+  ]
+}

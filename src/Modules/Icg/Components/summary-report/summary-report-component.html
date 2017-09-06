@@ -1,0 +1,38 @@
+<div id="summary-report">
+  <div  ng-show="showSummaryTitle" class="icg-summary-bar">UpToDate Pathway Completed<br>
+    <div class="pathways-summary-title"  >{{pathwayTitle}}</div>
+  </div>
+  <div class="icg-summary-report-panel">
+    <h4>Orders and Actions Selected</h4>
+    <div class="icg-summary-actions">
+      <div class="icg-summary-category" ng-show="showTreatmentSummary">
+        <b>Treatments</b>
+        <div class="icg-summary-item" ng-repeat="treat in treatments track by $index"> - {{treat}}</div>
+      </div>
+      <div class="icg-summary-category" ng-show="showMedSummary">
+        <b>Medications</b> <i>(doses may need to be adjusted based on the patients's age, comorbid illnesses, or drug interactions)</i>
+        <div class="icg-summary-item" ng-repeat="med in medications track by $index"> - {{med}}</div>
+      </div>
+    </div>
+    <h4>Decisions Summary</h4>
+    <div class="icg-summary-report">
+     <div ng-bind-html="summaryReportData"></div>
+    </div>
+    <h4>Professional Topics</h4>
+      <ul>
+        <li><a href="https://www.uptodate.com/contents/7?source=icg&topicId=108536&anchor=H00#H00" target="_blank">Treatment regimens for Helicobacter pylori</a></li>
+        <li><a href="https://www.uptodate.com/contents/18?source=icg&topicId=108536&anchor=H00#H00" target="_blank">Indications and diagnostic tests for Helicobacter pylori infection</a></li>
+        <li><a href="https://www.uptodate.com/contents/16?source=icg&topicId=108536&anchor=H00#H00" target="_blank">Bacteriology and epidemiology of Helicobacter pylori infection</span></li>
+      </ul>
+    <h4>Patient Education</h4>
+      <ul>
+        <li><a href="https://www.uptodate.com/contents/15734?source=icg&topicId=108536&anchor=H00#H00" target="_blank" >Patient education: H. pylori infection (The Basics)</li>
+        <li><a href="https://www.uptodate.com/contents/2012?source=icg&topicId=108536&anchor=H00#H00" target="_blank" >Patient education: Helicobacter pylori infection and treatment (Beyond the Basics)</li>
+      </ul>
+  </div>
+  <div id="pathways-summary-buttons">
+    <!-- <div class="pathways-summary-btn">Print Summary</div>
+    <div class="pathways-summary-btn">Email Summary</div>
+    <br><br> -->
+  </div>
+</div>

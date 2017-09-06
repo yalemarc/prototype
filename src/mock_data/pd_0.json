@@ -1,0 +1,48 @@
+{
+  "patientData":[
+    {
+      "pathway":"107764",
+      "pathwayData": [
+        {
+          "node":"01",
+          "exclusions": ["age","stroke"],
+          "relevantData":[
+            {
+              "label":"Age",
+              "desc": "Patient is under 18"
+            },
+            {
+              "label": "Gender",
+              "desc": "Patient is male"
+            }
+          ]
+        },{
+          "node":"50",
+          "exclusions": "",
+          "questions": [
+            {
+              "question": 0,
+              "id": ["01-calculator-2,2"]
+            },{
+              "question": 1,
+              "id": ["01-calculator-3,3"]
+            },{
+              "question": 2,
+              "id": ["01-calculator-4,6"]
+            }
+          ],
+          "relevantData":[
+            {
+              "label":"Age",
+              "desc": "Patient is under 18"
+            },
+            {
+              "label": "Gender",
+              "desc": "Patient is male"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

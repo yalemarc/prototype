@@ -1,0 +1,52 @@
+<div class="icg-info-card" id="card-{{cardData.id}}">
+  <div class="icg-info-card-content" id="card-content-{{cardData.id}}">
+    <div class="icg-info-card-content-container">
+      <chad-vas-panel
+        ng-if="showChadVas">
+      </chad-vas-panel>
+      <div ng-repeat= "quesItem in cardData.questions track by $index">
+        <div ng-bind-html="makeSafe(quesItem.disclaimer)" ng-show="quesItem.active"></div>
+        <div ng-click="showAddInfo()" ng-bind-html="makeSafe(quesItem.content)" ng-show="quesItem.active"></div>
+
+        <!-- <div ng-show="cardData.type === 'overview'">
+          <authors-editors authors-list="authorsList"></authors-editors>
+          <p>Last Updated: {{cardData.updated}}</p>
+          <a href="http://www.uptodate.com/home/editorial-policy" target="_blank"  class="icg-bold-link">Editorial Policy</a>
+        </div> -->
+        <required-tests
+          required-content = "quesItem.requiredTests"
+          required-disclaimer = "quesItem.requiredTestsDisclaimer"
+          ng-if = "quesItem.requiredTests" >
+        </required-tests>
+        <warning-component
+           warning-content = "quesItem.warningMessage"
+           ng-if="quesItem.warnings">
+        </warning-component>
+        <exclusions-component
+          exclusions-content = "quesItem.exclusions"
+          exclusions-list = "quesItem.exclusionList"
+          ng-if="quesItem.exclusions !== undefined">
+        </exclusions-component>
+        <div class="icg-exclusion-warning" ng-show="showWarning">
+          <!-- s<div class="icg-exclusion-warning-header">Warning</div> -->
+          <div class="icg-exclusion-warning-text" ng-bind-html="makeSafe(quesItem.warning)"></div>
+        </div>
+        <card-options
+          question-item = "quesItem"
+          card-data = "cardData"
+          show-warning = "showWarning" >
+        </card-options>
+      </div>
+    </div>
+    <patient-data-info
+      id = "patientInfo-{{cardData.id}}"
+      ref-id = "cardData.id"
+      patient-info = "patientInfo"
+      ng-if="showEhrPatientData">
+    </patient-data-info>
+  </div>
+</div>
+<!-- <summary-report
+  ng-if="cardData.type === 'summary' && cardData.active"
+  icg-data = "icgData">
+</summary-report> -->

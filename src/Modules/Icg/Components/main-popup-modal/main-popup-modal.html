@@ -1,0 +1,35 @@
+<div id="icg-main-modal">
+	<div class="icg-main-modal-background">
+	</div>
+	<div id="icg-main-popup-modal">
+		<div class="icg-modal-header">{{modalTitle}}
+			<div class="ehr-close-btn-modal" ng-click="closeWindow()" ng-show="!showSummary"></div>
+		</div>
+		<div class="icg-modal-content">
+			<!-- <h3>Note</h3>
+			<p>You must answer the Overview Question before proceeding to another level.</p>
+			<button ng-click="closeWindow()">OK</button> -->
+
+			<div ng-repeat="levels in icgData" ng-show="!showSummary">
+
+		  </div>
+		  <summary-report
+		  	icg-data = "icgData"
+		  	show-from= "showFrom"
+		    ng-if="showSummary"
+		    >
+		  </summary-report>
+
+		</div>
+
+	</div>
+	<div id="icg-main-modal-footer" ng-show="showSummary">
+		<div class="icg-modal-link" ng-show="showPolicy" ng-click="showPolicy = false">Hide Disclaimer</div>
+		<div class="icg-modal-link" ng-show="!showPolicy" ng-click="showPolicy = true">Show Disclaimer</div>
+		<div class="icg-modal-link" ng-show="showSummary" >Send Feedback</div>
+		<div class="icg-modal-link" ng-show="showSummary" >Print Report</div>
+	</div>
+	<div id="icg-info-policy" ng-show="showPolicy" ng-class="policyClass">
+		{{upToDatePolicy}}
+	</div>
+</div>

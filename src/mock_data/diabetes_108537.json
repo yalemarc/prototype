@@ -1,0 +1,804 @@
+{
+  "pathway": [
+      [
+        {
+          "type": "overview/n",
+          "active": true,
+          "statement": "Pathway scope, required tests,~warnings, and exclusions",
+          "status" : "active",
+          "extraWide": 20,
+          "id": "01",
+          "ref": "0",
+          "warning": "There are <strong>no warnings</strong> for this UpToDate Pathway",
+          "warnings": false,
+          "exclusions": "This Interactive Clinical Guideline <strong>is not</strong> appropriate for patients with any of the following exclusions:<br><ul><li>Pain present for >4 weeks</li><li>Age <18 years</li><li>Pregnant or breastfeeding</li><ul>",
+          "questions" : [
+            {
+              "question": "Is this UpToDate Pathway appropriate for this patient?",
+              "active": true,
+              "optionType": "single",
+              "options": [
+                {"label": "Yes", "value": false, "id":"01-100", "warning":false},
+                {"label": "No", "value": false, "id": "01-0", "warning":true}
+              ],
+              "content": "<h3>Scope<\/h3>\r\n   This UpToDate Pathway will help guide clinicians in managing glycemic control in patients with type 2 diabetes mellitus who have not yet been treated.<br><br>Goal hemoglobin A1C levels in patients with type 2 diabetes must be tailored to the individual, balancing the improvement in microvascular complications with the risk of hypoglycemia. For most patients, the hemoglobin A1C goal will be somewhere between ≤7% and ≤8%. A lower hemoglobin A1C goal may be appropriate for younger patients with minimal comorbidities, whereas a higher hemoglobin A1C goal may be appropriate for older patients and those with a limited life expectancy.<br><br>Glycemic control is only one of several aspects related to the care of patients with diabetes. While not addressed in this UpToDate Pathway, reducing cardiovascular risk in patients with diabetes is also extremely important. In addition, patients require several assessments (eg, foot examinations) (table) as part of their routine care for diabetes mellitus. <\/ul>"
+                ,
+              "requiredTests": [
+                {"label": "Hemoglobin A1C", "type": "list"},
+                {"label": "Fasting or random plasma glucose (ensure the patient is not consuming large amounts of sugar, such as in sports drinks, around the time of testing)", "type": "list"},
+                {"label": "Estimated glomerular filtration rate (eGFR)", "type": "list"}
+              ],
+              "requiredTestsDisclaimer": "The following test results may be required to answer the questions that will follow:",
+              "warning": "This Interactive Clinical Guideline is not appropriate for this patient because one or more exclusions are present. For additional information on the approach to patients not covered by this Interactive Clinical Guideline, please refer to <a href=''>Related UpToDate Content</a>. Close the browser tab to exit the Interactive Clinical Guideline",
+              "warningMessage": "",
+              "warnings": false,
+              "exclusions": "This Interactive Clinical Guideline <strong>is not</strong> appropriate for patients with any of the following exclusions:<br><ul><li>Pain present for >4 weeks</li><li>Age <18 years</li><li>Pregnant or breastfeeding</li><ul>",
+              "exclusionList": [
+                  {"label": "Current or prior pharmacologic treatment for diabetes mellitus","trigger":"pharmacologic","exclude": false,"type":"label" },
+                  {"label": "Type 1 diabetes mellitus","trigger":"type 1 diabetes","exclude": false,"type":"label" },
+                  {"label": "Age <18 years","trigger":"age","exclude": false,"type":"label" },
+                  {"label": "Pregnant or breastfeeding","trigger":"pregnant","exclude": false,"type":"label" }
+              ]
+            }
+
+          ],
+          "disclaimer": "",
+          "updated": "08/16/2017"
+        }
+      ],
+      [ {
+        "type": "start",
+        "active": false,
+        "statement": "Indications for initial~treatment with insulin?",
+        "status" : "off",
+        "id": "100",
+        "ref": "01",
+        "extraWide": 20,
+        "questions": [
+          {
+            "question": "",
+            "summaryDescription": "Risk factors for antibiotic resistance:",
+            "active": true,
+            "optionType": "single",
+            "options": [
+              {"label": "Yes", "value": false, "id": "100-200"},
+              {"label": "No", "value": false, "id": "100-201"}
+            ],
+            "content":"<b>Does the patient have any indications for initial <a href='#'>treatment with insulin</a>?</b><br><br>Indications include:<ul><li>Ketonuria</li><li>Unintentional weight loss</li><li>An unclear diagnosis (type 1 versus type 2 diabetes)",
+            "disclaimer": ""
+          }
+        ],
+        "updated": ""
+      } ], [ {
+        "type": "question",
+        "active": false,
+        "statement": "Select a~basal insulin?",
+        "status" : "off",
+        "response": "Yes",
+        "id": "200",
+        "ref": "100",
+        "extraWide": 0,
+        "questions": [
+          {
+            "question": "",
+            "summaryDescription": "Risk factors for antibiotic resistance:",
+            "active": true,
+            "optionType": "single",
+            "options": [
+              {"label": "Start basal insulin", "value": false, "id": "100-200"},
+              {"label": "Refer to a diabetes specialist", "value": false, "id": "100-201"},
+              {"label": "Approach other than the options provided (this may differ from the recommendations of UpToDate)", "value": false, "id": "100-201"}
+            ],
+            "content":"<b>Treatment with insulin is likely appropriate for this patient</b><br><br><b>Select a management approach.</b>",
+            "disclaimer": ""
+          }
+        ],
+        "updated": ""
+      } , {
+        "type": "question",
+        "active": false,
+        "statement": "Is the hemoglobin~A1C near goal?",
+        "status" : "off",
+        "response" : "No",
+        "id": "201",
+        "ref": "100",
+        "extraWide": 0,
+        "questions": [
+          {
+            "question": "",
+            "summaryDescription": "Risk factors for antibiotic resistance:",
+            "active": true,
+            "optionType": "single",
+            "options": [
+              {"label": "Yes", "value": false, "id": "201-300"},
+              {"label": "No", "value": false, "id": "201-301"}
+            ],
+            "content":"<b>Is the most recent hemoglobin A1C within 0.5 points of the goal value?</b><br><br><a href='#'>Goal hemoglobin A1C levels</a> in patients with type 2 diabetes must be tailored to the individual, balancing the improvement in microvascular complications with the risk of hypoglycemia. For most patients, the hemoglobin A1C goal will be somewhere between ≤7 and ≤8%. A lower hemoglobin A1C goal may be appropriate for younger patients with minimal comorbidities, whereas a higher hemoglobin A1C goal may be appropriate for older patients and those with a limited life expectancy." ,
+            "disclaimer": ""
+          }
+        ],
+        "updated": ""
+      } ], [ {
+        "type": "question",
+        "active": false,
+        "statement": "Lifestyle modifications~attempted",
+        "status" : "off",
+        "response" : "Yes",
+        "id": "300",
+        "ref": "201",
+        "extraWide": 0,
+        "specialWidth": 3,
+        "questions": [
+          {
+            "question": "",
+            "summaryDescription": "Risk factors for antibiotic resistance:",
+            "active": true,
+            "optionType": "single",
+            "options": [
+              {"label": "Yes", "value": false, "id": "300-400"},
+              {"label": "No", "value": false, "id": "300-401"}
+            ],
+            "content":"<b>Has the patient adopted intensive lifestyle modifications?</b><br><br>Lifestyle modifications include:<ul><li>Weight loss if overweight</li><li>Proper nutrition</li><li>Exercise</li><li>Modification of other cardiac risk factors (eg, smoking cessation, treatment of dyslipidemia, control of hypertension)" ,
+            "disclaimer": ""
+          }
+        ],
+        "updated": ""
+      } , {
+        "type": "question",
+        "active": false,
+        "statement": "Evidence of severe~hyperglycemia",
+        "status" : "off",
+        "response": "No",
+        "id": "301",
+        "ref": "201",
+        "extraWide": 0,
+        "specialWidth": 3,
+        "questions": [
+          {
+            "question": "",
+            "summaryDescription": "Risk factors for antibiotic resistance:",
+            "active": true,
+            "optionType": "single",
+            "options": [
+              {"label": "Yes", "value": false, "id": "301-402"},
+              {"label": "No", "value": false, "id": "301-403"}
+            ],
+            "content":"<b>Are there features suggesting severe hyperglycemia?</b><br><br>Features that suggest severe hyperglycemia include:<ul><li>Symptomatic hyperglycemia (symptoms may include thirst, polyuria, weight loss, and blurry vision)</li><li>Fasting plasma glucose >250 mg/dL</li><li>Random plasma glucose consistently >300 mg/dL</li><li>Hemoglobin A1C >9.5%</li></ul>",
+            "disclaimer": ""
+          }
+        ],
+        "updated": ""
+      } ], [ {
+        "type": "question",
+        "active": false,
+        "statement": "Trial of lifestyle~modifications",
+        "status" : "off",
+        "response": "Yes",
+        "id": "400",
+        "ref": "300",
+        "extraWide": 0,
+        "updated": "",
+        "questions": [
+          {
+            "question": "",
+            "summaryDescription": "Risk factors for antibiotic resistance:",
+            "active": true,
+            "optionType": "single",
+            "options": [
+              {"label": "Start basal insulin", "value": false, "id": "100-200"},
+              {"label": "Refer to a diabetes specialist", "value": false, "id": "100-201"},
+              {"label": "Approach other than the options provided (this may differ from the recommendations of UpToDate)", "value": false, "id": "100-201"}
+            ],
+            "content":"<b>Treatment with insulin is likely appropriate for this patient</b><br><br><b>Select a management approach.</b>",
+            "disclaimer": ""
+          }
+        ]
+      } , {
+        "type": "question",
+        "active": false,
+        "statement": "Patient willing to adopt~lifestyle modifications",
+        "status" : "off",
+        "response": "No",
+        "id": "401",
+        "ref": "300",
+        "extraWide": 0,
+        "updated": "",
+        "questions": [
+          {
+            "question": "",
+            "summaryDescription": "Risk factors for antibiotic resistance:",
+            "active": true,
+            "optionType": "single",
+            "options": [
+              {"label": "Yes", "value": false, "id": "401-500"},
+              {"label": "No", "value": false, "id": "401-500"}
+            ],
+            "content":"<b>Is the patient willing to adopt intensive lifestyle modifications?</b>",
+            "disclaimer": ""
+          }
+        ]
+      } , {
+        "type": "question",
+        "active": false,
+        "statement": "Patient willing~to take insulin?",
+        "status" : "off",
+        "response": "Yes",
+        "id": "402",
+        "ref": "301",
+        "extraWide": 0,
+        "updated": "",
+        "questions": [
+          {
+            "question": "",
+            "summaryDescription": "402Risk factors for antibiotic resistance:",
+            "active": true,
+            "optionType": "single",
+            "options": [
+              {"label": "Yes", "value": false, "id": "402-502"},
+              {"label": "No", "value": false, "id": "402-503"}
+            ],
+            "content":"<strong>For patients with evidence of severe hyperglycemia, treatment with insulin is preferred.</strong><br><br>Insulin is particularly appropriate for patients with renal insufficiency if there is significant concern for hypoglycemia.<br><br>For selected patients who do not want to take insulin, treatment with a sulfonylurea and/or metformin (preferably both) is an alternative. However, for other patients, insulin will be required. For some patients, a brief initial period (two to four weeks) of intensive insulin therapy followed by treatment with an oral agent (eg, metformin or a sulfonylurea) is appropriate.<br><br><strong>Does the patient want to start treatment with insulin?</strong>",
+            "disclaimer": ""
+          }
+        ]
+      } , {
+        "type": "question",
+        "active": false,
+        "statement": "Treatment~options",
+        "status" : "off",
+        "response": "No",
+        "id": "403",
+        "ref": "301",
+        "extraWide": 0,
+        "updated": "",
+        "questions": [
+          {
+            "question": "",
+            "summaryDescription": "Risk factors for antibiotic resistance:",
+            "active": true,
+            "optionType": "single",
+            "options": [
+              {"label": "Yes", "value": false, "id": "401-500"},
+              {"label": "No", "value": false, "id": "401-500"}
+            ],
+            "content":"<b>Is the patient willing to adopt intensive lifestyle modifications?</b>",
+            "disclaimer": ""
+          }
+        ]
+      }
+
+      ] , [
+        {
+        "type": "question",
+        "active": false,
+        "statement": "Trial of lifestyle~modifications",
+        "status" : "off",
+        "response": "Yes",
+        "id": "500",
+        "ref": "401",
+        "extraWide": 0,
+        "updated": "",
+        "questions": [
+          {
+            "question": "",
+            "summaryDescription": "Risk factors for antibiotic resistance:",
+            "active": true,
+            "optionType": "single",
+            "options": [
+              {"label": "Yes", "value": false, "id": "401-500"},
+              {"label": "No", "value": false, "id": "401-500"}
+            ],
+            "content":"<b>Is the patient willing to adopt intensive lifestyle modifications?</b>",
+            "disclaimer": ""
+          }
+        ]
+      } , {
+        "type": "continue",
+        "active": false,
+        "statement": "Additional~treatment options",
+        "status" : "off",
+        "response": "No",
+        "id": "501",
+        "ref": "401",
+        "subId" : "600",
+        "extraWide": 0,
+        "updated": "",
+        "questions": [
+          {
+            "question": "",
+            "summaryDescription": "Risk factors for antibiotic resistance:",
+            "active": true,
+            "optionType": "single",
+            "options": [
+              {"label": "Yes", "value": false, "id": "501-600"},
+              {"label": "No", "value": false, "id": "501-601"}
+            ],
+            "content":"<b>Is the patient willing to adopt intensive lifestyle modifications?</b>",
+            "disclaimer": ""
+          }
+        ]
+      } , {
+        "type": "question",
+        "active": false,
+        "statement": "Select a~basal insulin",
+        "status" : "off",
+        "response": "Yes",
+        "id": "502",
+        "ref": "402",
+        "extraWide": 0,
+        "updated": "",
+        "questions": [
+          {
+            "question": "",
+            "summaryDescription": "Risk factors for antibiotic resistance:",
+            "active": true,
+            "optionType": "single",
+            "options": [
+              {"label": "Yes", "value": false, "id": "401-500"},
+              {"label": "No", "value": false, "id": "401-500"}
+            ],
+            "content":"<b>Is the patient willing to adopt intensive lifestyle modifications?</b>",
+            "disclaimer": ""
+          }
+        ]
+      } , {
+        "type": "continue",
+        "active": false,
+        "statement": "Additional~Treatment options",
+        "status" : "off",
+        "response": "No",
+        "id": "503",
+        "ref": "402",
+        "subId" : "601",
+        "extraWide": 0,
+        "updated": "",
+        "questions": [
+          {
+            "question": "",
+            "summaryDescription": "Risk factors for antibiotic resistance:",
+            "active": true,
+            "optionType": "single",
+            "options": [
+              {"label": "Yes", "value": false, "id": "401-500"},
+              {"label": "No", "value": false, "id": "401-500"}
+            ],
+            "content":"<b>Is the patient willing to adopt intensive lifestyle modifications?</b>",
+            "disclaimer": ""
+          }
+        ]
+      }
+
+      ]
+    ],
+  "mainTitle": "Type 2 diabetes mellitus: Initial therapy for improving glycemic control in adults",
+  "subLevels": [
+    {
+      "ref" : "501",
+      "sublevel-501": [
+        [{
+          "type": "subLevel",
+          "active": true,
+          "statement":"Contraindications to~metformin",
+          "status" : "active",
+          "response" : "",
+          "id": "600",
+          "ref": "501",
+          "questions": [
+            {
+              "question": "",
+              "summaryDescription": "",
+              "active": true,
+              "optionType": "single",
+              "options": [
+                {"label": "Yes", "value": false, "id": "600-700"},
+                {"label": "No", "value": false, "id": "600-701"}
+              ],
+              "content": "<strong>Metformin is suggested as initial therapy for most patients if there are no contraindications.</strong><br><br>Treatment is suggested even if the hemoglobin A1C is at or close to the patient's target because treatment in such patients is associated with improved glycemic control over time and decreased long-term complications.<br><br>Contraindications to metformin include:<ul><li>eGFR <30 mL/min/1.73 m2</li><li>eGFR 30 to 44 mL/min/1.73 m2 along with active kidney disease</li><li>Active or progressive liver disease (fatty liver is not a contraindication unless there is significant steatohepatitis)</li><li>Active excessive use of alcohol</li><li>Unstable or acute heart failure at risk of hypoperfusion and hypoxemia</li><li>Past history of lactic acidosis during metformin therapy</li><li>Decreased tissue perfusion or hemodynamic instability due to infection or other causes</li></ul><br>For patients with an eGFR between 30 and 44 mL/min/1.73 m2 and in the absence of active kidney disease (eg, a glomerulonephritis), some UpToDate authors and editors would not initiate metformin, whereas others would increase the frequency of kidney function monitoring and reduce the metformin dose by half (no more than 1000 mg per day), although there are little or no data to support the glycemic efficacy and safety of the latter approach. Lower doses of metformin may not produce the desired lowering of glycemia and may not be safer.<br><br><strong>Are there contraindications to metformin?</strong>",
+              "disclaimer": ""
+            }
+          ],
+          "updated": ""
+        }], [{
+          "type": "question",
+          "active": true,
+          "statement":"Reasons to avoid~a sulfonylurea",
+          "status" : "active",
+          "response" : "Yes",
+          "id": "700",
+          "ref": "600",
+          "specialWidth": 2,
+          "questions": [
+            {
+              "question": "",
+              "summaryDescription": "",
+              "active": true,
+              "optionType": "single",
+              "options": [
+                {"label": "Yes", "value": false, "id": "700-800"},
+                {"label": "No", "value": false, "id": "700-801"}
+              ],
+              "content": "<strong>A sulfonylurea is suggested for patients with severe hyperglycemia who are unwilling to take insulin, provided the patient does not have any reasons to avoid sulfonylureas.</strong><br><br><a href='#'>Reasons to avoid a sulfonylurea include</a>:<ul><li>Poor nutrition or frequently missed meals</li><li>Active excessive use of alcohol</li><li>Occupation or participation in activities that put the patient or others at risk of serious harm should hypoglycemia occur (eg, roofer)</li></ul>In addition, sulfonylureas are renally cleared and increase the risk of hypoglycemia in patients with chronic kidney disease. Short-acting sulfonylureas (glipizide, glimepiride) may be used in these patients, but long-acting sulfonylureas should be avoided. Because of the risk of hypoglycemia, some experts prefer to avoid sulfonylureas in these patients.<br><br>Concern regarding potential cross-reactivity of sulfonamide derivatives (sulfamethoxazole, sulfasalazine) and sulfonylureas in patients with a history of sulfa antibiotic allergies appears to be unfounded and is no longer listed as a contraindication in the package insert for glipizide immediate-release. Although hypersensitivity to sulfonamides is still listed as a warning for glimepiride and a contraindication for gliclazide and glipizide XL, most clinicians use sulfonylureas in patients with professed allergies to sulfonamide antibiotics without any problems.<br><br><strong>Does the patient have any reasons to avoid taking a sulfonylurea?</strong",
+              "disclaimer": ""
+            }
+          ],
+          "updated": ""
+          } , {
+          "type": "question",
+          "active": true,
+          "statement":"Estimated glomerular~filtration rate (eGFR)",
+          "status" : "active",
+          "response" : "No",
+          "id": "701",
+          "ref": "600",
+          "specialWidth": 2,
+          "updated": "",
+          "questions": [
+            {
+              "question": "",
+              "summaryDescription": "",
+              "active": true,
+              "optionType": "single",
+              "options": [
+                {"label": "30 to 44 mL/min/1.73 m2", "value": false, "id": "701-703"},
+                {"label": "45 mL/min/1.73 m2 or higher", "value": false, "id": "701-804"}
+              ],
+              "content": "<strong>What is the patients eGFR?</strong>",
+              "disclaimer": ""
+            }
+          ]
+        }] , [{
+          "type": "question",
+          "active": true,
+          "statement":"Select and alernative to~metformin and sulfonylurea",
+          "status" : "active",
+          "response" : "Yes",
+          "extraWide": "20",
+          "id": "801",
+          "ref": "700",
+          "updated": "",
+          "questions": [
+            {
+              "question": "",
+              "summaryDescription": "",
+              "active": true,
+              "optionType": "single",
+              "options": [
+                {"label": "30 to 44 mL/min/1.73 m2", "value": false, "id": "801-903"},
+                {"label": "45 mL/min/1.73 m2 or higher", "value": false, "id": "801-904"}
+              ],
+              "content": "<strong>What is the patients eGFR?</strong>",
+              "disclaimer": ""
+            }
+          ]
+          } , {
+            "type": "question",
+            "active": true,
+            "statement":"Select a~sulfonylurea",
+            "status" : "active",
+            "response" : "No",
+            "id": "802",
+            "ref": "700",
+            "updated": "",
+            "questions": [
+              {
+                "question": "",
+                "summaryDescription": "",
+                "active": true,
+                "optionType": "single",
+                "options": [
+                  {"label": "30 to 44 mL/min/1.73 m2", "value": false, "id": "802-903"},
+                  {"label": "45 mL/min/1.73 m2 or higher", "value": false, "id": "802-904"}
+                ],
+                "content": "<strong>What is the patients eGFR?</strong>",
+                "disclaimer": ""
+              }
+            ]
+          } , {
+            "type": "question",
+            "active": true,
+            "statement":"Select metformin~(reduced dose)",
+            "status" : "active",
+            "response" : "30 to 44 mL/min/1.73 m2",
+            "id": "803",
+            "ref": "701",
+            "updated": "",
+            "questions": [
+              {
+                "question": "",
+                "summaryDescription": "",
+                "active": true,
+                "optionType": "single",
+                "options": [
+                  {"label": "30 to 44 mL/min/1.73 m2", "value": false, "id": "803-903"},
+                  {"label": "45 mL/min/1.73 m2 or higher", "value": false, "id": "803-904"}
+                ],
+                "content": "<strong>What is the patients eGFR?</strong>",
+                "disclaimer": ""
+              }
+            ]
+          } , {
+            "type": "end",
+            "active": true,
+            "statement":"Select metformin~(standard dose)",
+            "status" : "active",
+            "response" : "45 mL/min/1.73 m2 or higher",
+            "id": "804",
+            "ref": "701",
+            "updated": "",
+            "questions": [
+              {
+                "question": "",
+                "summaryDescription": "",
+                "active": true,
+                "optionType": "single",
+                "options": [
+                  {"label": "Start metformin", "value": false, "id": "704-703"},
+                  {"label": "Refer to a diabetes specialist", "value": false, "id": "704-704"},
+                  {"label": "Approach other than the options provided (this may differ from the recommendations of UpToDate)", "value": false, "id": "704-705"}
+                ],
+                "content": "<strong>Treatment with standard-dose metformin is likely appropriate for this patient.<br><br>Select a management approach.</strong>",
+                "disclaimer": ""
+              }
+            ]
+          }]
+      ]
+    } , {
+      "ref" : "503",
+      "sublevel-503": [
+        [{
+          "type": "subLevel",
+          "active": true,
+          "statement":"Reasons to avoid~a sulfonylurea?",
+          "status" : "active",
+          "response" : "",
+          "id": "601",
+          "ref": "503",
+          "questions": [
+            {
+              "question": "",
+              "summaryDescription": "",
+              "active": true,
+              "optionType": "single",
+              "options": [
+                {"label": "Yes", "value": false, "id": "601-702"},
+                {"label": "No", "value": false, "id": "602-703"}
+              ],
+              "content": "<strong>A sulfonylurea is suggested for patients with severe hyperglycemia who are unwilling to take insulin, provided the patient does not have any reasons to avoid sulfonylureas.</strong><br><br>Reasons to avoid a sulfonylurea include:<ul><li>Poor nutrition or frequently missed meals</li><li>Active excessive use of alcohol</li><li>Occupation or participation in activities that put the patient or others at risk of serious harm should hypoglycemia occur (eg, roofer)</li></ul>In addition, sulfonylureas are renally cleared and increase the risk of hypoglycemia in patients with chronic kidney disease. Short-acting sulfonylureas (glipizide, glimepiride) may be used in these patients, but long-acting sulfonylureas should be avoided. Because of the risk of hypoglycemia, some experts prefer to avoid sulfonylureas in these patients.<br><br>Concern regarding potential cross-reactivity of sulfonamide derivatives (sulfamethoxazole, sulfasalazine) and sulfonylureas in patients with a history of sulfa antibiotic allergies appears to be unfounded and is no longer listed as a contraindication in the package insert for glipizide immediate-release. Although hypersensitivity to sulfonamides is still listed as a warning for glimepiride and a contraindication for gliclazide and glipizide XL, most clinicians use sulfonylureas in patients with professed allergies to sulfonamide antibiotics without any problems.<br><br><strong>Does the patient have any reasons to avoid taking a sulfonylurea?</strong>",
+              "disclaimer": ""
+            }
+          ],
+          "updated": ""
+        }] , [{
+          "type": "question",
+          "active": true,
+          "statement":"Contraindications to~metformin?",
+          "status" : "active",
+          "response" : "Yes",
+          "id": "702",
+          "ref": "601",
+          "specialWidth": 2,
+          "questions": [
+            {
+              "question": "",
+              "summaryDescription": "",
+              "active": true,
+              "optionType": "single",
+              "options": [
+                {"label": "Yes", "value": false, "id": "702-805"},
+                {"label": "No", "value": false, "id": "702-806"}
+              ],
+              "content": "<strong>Metformin is suggested as initial therapy for patients with severe hyperglycemia who are unwilling to take insulin and have reasons to avoid taking a sulvonylurea, provided there are no contraindications to metformin.</strong><br><br>Contraindications to metformin include:<ul><li>eGFR <30 mL/min/1.73 m2</li><li>eGFR 30 to 44 mL/min/1.73 m2 along with active kidney disease</li><li>Active or progressive liver disease (fatty liver is not a contraindication unless there is significant steatohepatitis)</li><li>Active excessive use of alcohol</li><li>Unstable or acute heart failure at risk of hypoperfusion and hypoxemia</li><li>Past history of lactic acidosis during metformin therapy</li><li>Decreased tissue perfusion or hemodynamic instability due to infection or other causes</li></ul>For patients with eGFR between 30 and 44 mL/min/1.73 m2 and in the absence of active kidney disease (eg, a glomerulonephritis), some UpToDate authors and editors would not initiate metformin, whereas others would increase the frequency of kidney function monitoring and reduce the metformin dose by half (no more than 1000 mg per day), although there are little or no data to support the glycemic efficacy and safety of the latter approach. Lower doses of metformin may not produce the desired lowering of glycemia and may not be safer.<br><br><strong>Are there contraindications to metformin?</strong>",
+              "disclaimer": ""
+            }
+          ],
+          "updated": ""
+          } , {
+            "type": "question",
+            "active": true,
+            "statement":"Contraindications to~metformin?",
+            "status" : "active",
+            "response" : "No",
+            "id": "703",
+            "ref": "601",
+            "specialWidth": 2,
+            "questions": [
+              {
+                "question": "",
+                "summaryDescription": "",
+                "active": true,
+                "optionType": "single",
+                "options": [
+                  {"label": "Yes", "value": false, "id": "703-807"},
+                  {"label": "No", "value": false, "id": "703-808"}
+                ],
+                "content": "<strong>Metformin is suggested as initial therapy for patients with severe hyperglycemia who are unwilling to take insulin and have reasons to avoid taking a sulvonylurea, provided there are no contraindications to metformin.</strong><br><br>Contraindications to metformin include:<ul><li>eGFR <30 mL/min/1.73 m2</li><li>eGFR 30 to 44 mL/min/1.73 m2 along with active kidney disease</li><li>Active or progressive liver disease (fatty liver is not a contraindication unless there is significant steatohepatitis)</li><li>Active excessive use of alcohol</li><li>Unstable or acute heart failure at risk of hypoperfusion and hypoxemia</li><li>Past history of lactic acidosis during metformin therapy</li><li>Decreased tissue perfusion or hemodynamic instability due to infection or other causes</li></ul>For patients with eGFR between 30 and 44 mL/min/1.73 m2 and in the absence of active kidney disease (eg, a glomerulonephritis), some UpToDate authors and editors would not initiate metformin, whereas others would increase the frequency of kidney function monitoring and reduce the metformin dose by half (no more than 1000 mg per day), although there are little or no data to support the glycemic efficacy and safety of the latter approach. Lower doses of metformin may not produce the desired lowering of glycemia and may not be safer.<br><br><strong>Are there contraindications to metformin?</strong>",
+                "disclaimer": ""
+              }
+            ],
+            "updated": ""
+          }] , [{
+            "type": "end",
+            "active": true,
+            "statement":"Select a basal Insulin",
+            "status" : "active",
+            "response" : "Yes",
+            "id": "805",
+            "ref": "702",
+            "questions": [
+              {
+                "question": "",
+                "summaryDescription": "",
+                "active": true,
+                "optionType": "single",
+                "options": [
+                  {"label": "Yes", "value": false, "id": "805-905"},
+                  {"label": "No", "value": false, "id": "805-906"}
+                ],
+                "content": "805 Question",
+                "disclaimer": ""
+              }
+            ]
+          } , {
+            "type": "question",
+            "active": true,
+            "statement":"Estimated glomerular~filtration rate (eGFR)",
+            "status" : "active",
+            "response" : "Yes",
+            "id": "806",
+            "ref": "702",
+            "questions": [
+              {
+                "question": "",
+                "summaryDescription": "",
+                "active": true,
+                "optionType": "single",
+                "options": [
+                  {"label": "Yes", "value": false, "id": "805-905"},
+                  {"label": "No", "value": false, "id": "805-906"}
+                ],
+                "content": "805 Question",
+                "disclaimer": ""
+              }
+            ]
+          } , {
+            "type": "end",
+            "active": true,
+            "statement":"Select a~sulfonylurea",
+            "status" : "active",
+            "response" : "Yes",
+            "id": "807",
+            "ref": "703",
+            "questions": [
+              {
+                "question": "",
+                "summaryDescription": "",
+                "active": true,
+                "optionType": "single",
+                "options": [
+                  {"label": "Yes", "value": false, "id": "805-905"},
+                  {"label": "No", "value": false, "id": "805-906"}
+                ],
+                "content": "805 Question",
+                "disclaimer": ""
+              }
+            ]
+          } , {
+            "type": "question",
+            "active": true,
+            "statement":"Estimated glomerular~filtration rate (eGFR)",
+            "status" : "active",
+            "response" : "Yes",
+            "id": "808",
+            "ref": "703",
+            "questions": [
+              {
+                "question": "",
+                "summaryDescription": "",
+                "active": true,
+                "optionType": "single",
+                "options": [
+                  {"label": "Yes", "value": false, "id": "808-907"},
+                  {"label": "No", "value": false, "id": "808-908"}
+                ],
+                "content": "805 Question",
+                "disclaimer": ""
+              }
+            ]
+          }] , [{
+            "type": "end",
+            "active": true,
+            "statement":"Select metformin~(reduced dose)",
+            "status" : "active",
+            "response" : "Yes",
+            "id": "905",
+            "ref": "806",
+            "questions": [
+              {
+                "question": "",
+                "summaryDescription": "",
+                "active": true,
+                "optionType": "single",
+                "options": [
+                  {"label": "Yes", "value": false, "id": "808-907"},
+                  {"label": "No", "value": false, "id": "808-908"}
+                ],
+                "content": "805 Question",
+                "disclaimer": ""
+              }
+            ]
+          } , {
+            "type": "end",
+            "active": true,
+            "statement":"Select metformin~(standard dose)",
+            "status" : "active",
+            "response" : "Yes",
+            "id": "906",
+            "ref": "806",
+            "questions": [
+              {
+                "question": "",
+                "summaryDescription": "",
+                "active": true,
+                "optionType": "single",
+                "options": [
+                  {"label": "Yes", "value": false, "id": "808-907"},
+                  {"label": "No", "value": false, "id": "808-908"}
+                ],
+                "content": "805 Question",
+                "disclaimer": ""
+                }
+              ]
+              } , {
+            "type": "end",
+            "active": true,
+            "statement":"Select metformin (reduced dose)~and a sulfonylurea",
+            "status" : "active",
+            "response" : "30 to 44 mL/min/1.73 m2",
+            "id": "907",
+            "ref": "808",
+            "extraWide" : 20,
+            "questions": [
+              {
+                "question": "",
+                "summaryDescription": "",
+                "active": true,
+                "optionType": "single",
+                "options": [
+                  {"label": "Yes", "value": false, "id": "808-907"},
+                  {"label": "No", "value": false, "id": "808-908"}
+                ],
+                "content": "805 Question",
+                "disclaimer": ""
+              }
+            ]
+          } , {
+            "type": "end",
+            "active": true,
+            "statement":"Select metformin (reduced dose)~and a sulfonylurea",
+            "status" : "active",
+            "response" : "45 mL/min/1.73 m2 or higher",
+            "id": "908",
+            "ref": "808",
+            "extraWide" : 20,
+            "questions": [
+              {
+                "question": "",
+                "summaryDescription": "",
+                "active": true,
+                "optionType": "single",
+                "options": [
+                  {"label": "Yes", "value": false, "id": "808-907"},
+                  {"label": "No", "value": false, "id": "808-908"}
+                ],
+                "content": "805 Question",
+                "disclaimer": ""
+              }
+            ]
+          }
+
+
+          ]
+      ]
+    }
+  ]
+}

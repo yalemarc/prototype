@@ -1,0 +1,16 @@
+<div id="pathways-slideout-panel">
+  <div id="pathways-slideout-panel-header">
+    <div class="pathways-slideout-close-btn" id="slideout-close-btn" ng-click="slideoutCtrl.closeSlideout()"></div>
+    {{slideoutCtrl.slideoutTitle}}
+  </div>
+  <div id="pathways-slideout-panel-content">
+    <div ng-bind-html="makeSafe(slideoutCtrl.slideoutContents)">
+    </div>
+    <!-- <warning-exclusions-panel
+        warning-content="slideoutCtrl.slideoutWarning"
+        exclusions-content="slideoutCtrl.slideoutExclusions"
+        warnings = "slideoutCtrl.warnings">
+    </warning-exclusions-panel> -->
+  </div>
+
+</div>

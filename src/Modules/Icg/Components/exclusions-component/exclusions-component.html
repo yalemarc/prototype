@@ -1,0 +1,23 @@
+<div class= pathways-warning-main-container>
+  <div class="pathways-warning-title" >Exclusions<div class="pathways-count-container" ng-show = "showCarets" ng-click="showExclusionList=!showExclusionList">{{exclusionCt}}</div></div>
+    <div>
+      <div class="pathways-carets" ng-show = "showCarets">
+        <div class="pathways-exclusion-caret-right" ng-show="!showExclusionList" ng-click="showExclusionList=!showExclusionList"></div>
+        <div class="pathways-exclusion-caret-down" ng-click="showExclusionList=!showExclusionList" ng-show="showExclusionList"></div>
+      </div>
+      <div class="pathways-exclusion-disclaimer">This UpToDate Pathway <b>is not</b> appropriate for patients with any of the following exclusions:</div>
+    </div>
+    <div class="pathways-list-container" ng-show="showExclusionList" >
+      <div  ng-repeat="exclusionItem in exclusionsCtrl.exclusionsList" >
+        <div class="pathways-carets" ng-show="isSubHeader(exclusionItem.type)">
+          <div class="pathways-exclusion-caret-right" ng-show="!showSubExclusions($index)" ng-click="chgSubExclusions($index)"></div>
+          <div class="pathways-exclusion-caret-down" ng-click="chgSubExclusions($index)" ng-show="showSubExclusions($index)"></div>
+        </div>
+        <div class="pathways-bullet-list" ng-show = "isStandard(exclusionItem.type)">{{exclusionItem.label}}<div ng-show="exclusionItem.exclude" class="pathways-exclusion-data-icon">EHR</div></div>
+        <div class="pathways-bullet-sub-header" ng-show="isSubHeader(exclusionItem.type, $index)">{{exclusionItem.label}}</div>
+        <div class="pathways-bullet-sub-item" ng-show="isSubItem(exclusionItem.type,$index)">{{exclusionItem.label}}<div ng-show="exclusionItem.exclude" class="pathways-exclusion-data-icon">EHR</div></div>
+        <ul ng-if='exclusionItem.showSubItems'><li ng-repeat="subItem in exclusionItem.subItems">{{subItem}}</li></ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div class= pathways-warning-main-container>
+  <div class="pathways-warning-title">Warning</div>
+  <div class="pathways-warning-panel">
+    <div class="pathways-warning-icon" ng-show="warningCtrl.warnings"></div>
+    <div class="pathways-warning-content" ng-bind-html="makeSafe(warningCtrl.warningContent)"></div>
+  </div>
+  <div class="pathways-warning-title">Exclusions</div>
+  <div id="pathways-exclusions-panel">
+    <div id="pathways-warning-fade"></div>
+    <div class="pathways-warning-content" ng-bind-html="makeSafe(warningCtrl.exclusionsContent)"></div>
+
+  </div>
+</div>

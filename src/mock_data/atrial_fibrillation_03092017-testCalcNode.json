@@ -1,0 +1,101 @@
+{
+  "pathway":[ [ {
+      "type": "overview",
+      "active": true,
+      "statement": "CHA2DS2-VASc score = 0~(Click to recalculate score)",
+      "status" : "active",
+      "id": "01",
+      "ref": "0",
+      "warning": "If baseline hematologic studies show thromboctopenia, coagulopathy or unexplained anemia, refer the patient urgently to hematology and do not start anticoagulation.  If the patient is pregnant, she should be urgently referred to a specialist in the management of women who are pregnant and require anticoagulation.",
+      "warnings": true,
+      "exclusions": "This UpToDate Pathway <strong>is not</strong> appropriate for patients with any of the following exclusions:<br><strong><ul> <li>Age <18 years</li><li>Anticipated cardioversion or catheter ablation of atrial fibrillation in the next 4 weeks</li><li>Receiving a parenteral anticoagulant(eg. heparin or low molecular weight haparin)</li><li>Pregnant or breastfeeding</li><li>Indications for anticoagulation in addition to atrial fibrillation</strong><div> - Deep vein thrombosis</div><div> - Pulmonary embolism</div><div> - thrombophia</div><div> - Intracardiac thrombus</div></li><li><strong>Specific types of heart disease/surgery</strong></li><div> - Mitral stenosis</div><div> -  Prosthetic heart valve (mechanical or bioprosthetic)</div><div> - History of rheumatic heart disease</div><div> - Hypertrophic cardiomyopathy</div><li><b>Hematologic abnormalities</b></li><div> - Thrombocytopenia</div><div> - Coagulopathy (not due to anticoagulant use)</div><div> - Unexplained anemia</div><li><b>Significant renal disease</b><div> - End stage renal disease</div><div> - Acute kidney injury</div><div> - Creatnine clearance <30 mL/min</div></li><li><b>Hepatic impairment</b></li><div> - Cirrhosis</div><div> - Significant hepatic fibrosis</div><div> - Hepatic synthetic dysfunction</div><li><b>High bleeding risk</b></li><div> - Planned or recent (within 72 hours) procedure with high risk of bleeding (major surgery, neuraxial procedure)</div><div> - Known bleeding disorder</div><div> - Prolonged prothrombin time or INR >1.2 (not due to warfarin use)</div><div> - Suspected aortic dissection</div><div> - Large abdominal aortic aneurysm</div><div> - frequent falls</div><div> - Active alcohol abuse</div><div> - Active bleeding (non-menstrual) or recent major bleeding (within 2 weeks)</div><li><b>Risk factors for intracranial bleeding</b></li><div> - Severe uncontrolled hypertension (ie, systolic >180 mmHg and/or diastolic > 120 mmHg)</div><div> - Prior intracranial hemorrhage</div><div> - Known cerebrovascular malformation</div><div> - Known malignant intracranial neoplasm</div><div> - Significant closed head trauma within 3 months</div></li></ul>",
+      "questions" : [
+        {
+          "question": "Is this UpToDate Pathway appropriate for this patient?",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "Yes", "value": false, "id":"01-100", "warning":false},
+            {"label": "No", "value": false, "id": "01-0", "warning":true}
+          ],
+          "content": "<h3>Scope</h3> This Interactive Clinical Guideline will help determine if an adult with non-valvular atrial fibrillation is likely to benefit from chronic oral anticoagulation and guide clinicians in the appropriate choice of an oral anticoagulant for a given patient.\n <p>Last updated 02/07/2017</p><h3>Required Tests</h3><div id='required-tests-content.active'>The following test results may be required to answer the questions that will follow:<ul><li>Serum creatinine/creatinine clearance</li></ul>In addition, the following test results should be available prior to starting a patient on an anticoagulant:<ul><li>Prothrombin time (PT)/international normalized ratio (INR)</li><li>Activated partial thromboplastin time (aPTT)&nbsp;</li><li>Complete blood count</li><li>Quantitative serum human chorionic gonadotropin (hCG) pregnancy test (for women who might be pregnant)</li></ul></div>",
+          "warning": "<strong>This UpToDate Pathway is not appropriate for this patient because one or more exclusions are present. For additional information on the approach to patients not covered by this UpToDate Pathway, please refer to <a href=\"\">Related UpToDate Content</a>. Close the browser tab to exit the UpToDate Pathway</strong> ",
+          "warningMessage": "If baseline hematologic studies show thromboctopenia, coagulopathy or unexplained anemia, refer the patient urgently to hematology and do not start anticoagulation.  If the patient is pregnant, she should be urgently referred to a specialist in the management of women who are pregnant and require anticoagulation.",
+          "warnings": true,
+          "exclusions": "This UpToDate Pathway <strong>is not</strong> appropriate for patients with any of the following exclusions:<br><strong><ul> <li>Age <18 years</li><li>Anticipated cardioversion or catheter ablation of atrial fibrillation in the next 4 weeks</li><li>Receiving a parenteral anticoagulant(eg. heparin or low molecular weight haparin)</li><li>Pregnant or breastfeeding</li><li>Indications for anticoagulation in addition to atrial fibrillation</strong><div> - Deep vein thrombosis</div><div> - Pulmonary embolism</div><div> - thrombophia</div><div> - Intracardiac thrombus</div></li><li><strong>Specific types of heart disease/surgery</strong></li><div> - Mitral stenosis</div><div> -  Prosthetic heart valve (mechanical or bioprosthetic)</div><div> - History of rheumatic heart disease</div><div> - Hypertrophic cardiomyopathy</div><li><b>Hematologic abnormalities</b></li><div> - Thrombocytopenia</div><div> - Coagulopathy (not due to anticoagulant use)</div><div> - Unexplained anemia</div><li><b>Significant renal disease</b><div> - End stage renal disease</div><div> - Acute kidney injury</div><div> - Creatnine clearance <30 mL/min</div></li><li><b>Hepatic impairment</b></li><div> - Cirrhosis</div><div> - Significant hepatic fibrosis</div><div> - Hepatic synthetic dysfunction</div><li><b>High bleeding risk</b></li><div> - Planned or recent (within 72 hours) procedure with high risk of bleeding (major surgery, neuraxial procedure)</div><div> - Known bleeding disorder</div><div> - Prolonged prothrombin time or INR >1.2 (not due to warfarin use)</div><div> - Suspected aortic dissection</div><div> - Large abdominal aortic aneurysm</div><div> - frequent falls</div><div> - Active alcohol abuse</div><div> - Active bleeding (non-menstrual) or recent major bleeding (within 2 weeks)</div><li><b>Risk factors for intracranial bleeding</b></li><div> - Severe uncontrolled hypertension (ie, systolic >180 mmHg and/or diastolic > 120 mmHg)</div><div> - Prior intracranial hemorrhage</div><div> - Known cerebrovascular malformation</div><div> - Known malignant intracranial neoplasm</div><div> - Significant closed head trauma within 3 months</div></li></ul>"
+
+        }
+      ],
+      "disclaimer": "",
+      "updated": "12/12/2016"
+    } ], [ {
+      "type": "single",
+      "active": false,
+      "statement": "Calculator Node",
+      "status" : "off",
+      "id": "100",
+      "ref": "01",
+      "questions": [
+        {
+          "question": "Do you want to start/continue anticoagulation?",
+          "summaryDescription": "Risk factors for antibiotic resistance:",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "Yes start/continue anticoagulation", "value": false, "id": "100-200"},
+            {"label": "No do not start/continue anticoagulation", "value": false, "id": "100-201"}
+          ],
+          "content":"<div class='caption'><span class='reference reference_enabled'>Anticoagulation is not suggested</span> for most patients with a CHA2DS2-VASc score of 0.<br><br> For patients with a CHA2DS2-VASc score of 0, the estimated annual stroke risk is 0.2% and the benefit-to-risk ratio generally does not favor anticoagulation. Nevertheless, a patient who is particularly stroke averse and is not at increased risk for bleeding may reasonably choose anticoagulation. <br><br>This patient's HAS-BLED score is 1, which is associated with a bleeding risk of 1.02 bleeds per 100 patient-years.<br><br>Characteristics that have been associated with an increased risk of bleeding include:<ul><li>Increased age (variously reported as &gt;60 to &gt;80 years)</li><li>Female sex</li><li>Prior stroke or intracerebral hemorrhage</li><li>Previous severe hemorrhage during treatment with warfarin with an INR in the therapeutic range</li><li>Comorbid illnessess: Diabetes mellitus, hypertension, hepatic dysfunction, renal dysfunction, malignancy, anemia</li><li>For patients on warfarin: poor drug compliance, irregular clinic attendance, or instability of INR control</li><li>Bleeding disorder (eg, coagulation defect, thrombocytopenia) or pretreatment INR &gt;1.2</li><li>Concomitant use of aspirin, an NSAID, or an antiplatelet agent (eg, clopidogrel)</li></ul><strong></div>",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+    } ],  [ {
+      "type": "single",
+      "active": false,
+      "statement": "Node 3",
+      "status" : "off",
+      "id": "200",
+      "ref": "100",
+      "questions": [
+        {
+          "question": "Do you want to start/continue anticoagulation?",
+          "summaryDescription": "Risk factors for antibiotic resistance:",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "Yes start/continue anticoagulation", "value": false, "id": "100-200"},
+            {"label": "No do not start/continue anticoagulation", "value": false, "id": "100-201"}
+          ],
+          "content":"<div class='caption'><span class='reference reference_enabled'>Anticoagulation is not suggested</span> for most patients with a CHA2DS2-VASc score of 0.<br><br> For patients with a CHA2DS2-VASc score of 0, the estimated annual stroke risk is 0.2% and the benefit-to-risk ratio generally does not favor anticoagulation. Nevertheless, a patient who is particularly stroke averse and is not at increased risk for bleeding may reasonably choose anticoagulation. <br><br>This patient's HAS-BLED score is 1, which is associated with a bleeding risk of 1.02 bleeds per 100 patient-years.<br><br>Characteristics that have been associated with an increased risk of bleeding include:<ul><li>Increased age (variously reported as &gt;60 to &gt;80 years)</li><li>Female sex</li><li>Prior stroke or intracerebral hemorrhage</li><li>Previous severe hemorrhage during treatment with warfarin with an INR in the therapeutic range</li><li>Comorbid illnessess: Diabetes mellitus, hypertension, hepatic dysfunction, renal dysfunction, malignancy, anemia</li><li>For patients on warfarin: poor drug compliance, irregular clinic attendance, or instability of INR control</li><li>Bleeding disorder (eg, coagulation defect, thrombocytopenia) or pretreatment INR &gt;1.2</li><li>Concomitant use of aspirin, an NSAID, or an antiplatelet agent (eg, clopidogrel)</li></ul><strong></div>",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+    } ], [
+       {
+          "type": "summary",
+          "active": false,
+          "statement": "UpToDate Pathway Complete",
+          "status" : "off",
+          "ref": "9000",
+          "response": "Yes",
+          "id": "summary",
+          "questions": [
+            {
+              "question": "",
+              "active": false,
+              "optionType": "single",
+              "options": [
+
+              ],
+              "content": ""
+            }
+          ],
+          "disclaimer": "",
+          "updated": ""
+        }
+      ]
+    ],
+  "mainTitle" : "Atrial Fibrillation: Anticoagulation for adults with nonvalvular atrial fibrillation"
+}

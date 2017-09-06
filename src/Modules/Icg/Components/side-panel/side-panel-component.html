@@ -1,0 +1,34 @@
+
+<div id="icg-side-panel" >
+<div id="icg-masthead-title-band-mobile" >
+  <div class="icg-topbar-title"  >{{panelCtrl.topbarTitle}}</div>
+</div>
+  <div class="ehr-patient-notice" ng-if="showEHRInfo"><div class="ehr-blue-checkbox-selected"></div><div class="ehr-included-desc"><b>Includes Patient Data</b></div><br>Some pathway questions were answered for patient {{ }} using data from their medical record. The answered questions are flagged with 'EHR'. <a href='#'>Learn More</a></div>
+  <div ng-repeat="levels in panelCtrl.icgData track by $index" id="pathways-side-panel-content">
+	  <info-card
+	    ng-repeat="item in levels track by $index"
+	    card-data = "item"
+      levels = "levels"
+      icg-data = "panelCtrl.icgData"
+      ng-show="item.active">
+    </info-card>
+  </div>
+  <summary-report
+      ng-if = "showSummaryReport"
+      icg-data = "panelCtrl.icgData"
+      show-from = "showFrom"
+      pathway-title="topbarTitle">
+  </summary-report>
+  <div id="pathways-bottom-overview-disclaimer" ng-if="panelCtrl.showSideDisclaimer">
+    <div id="icg-bottom-policy-title">Disclaimer
+    </div>
+    {{panelCtrl.upToDateDisclaimer}}
+  </div>
+</div>
+<div id="icg-side-panel-tab" ng-mousedown="startResize()" ng-mouseup="stopResize()">
+  <div id='pathways-handle-stripes'></div>
+</div>
+<div id="pathways-sidepanel-blockout" ng-if="panelCtrl.showSideDisclaimer"><div>
+
+<!-- <div id="icg-feedback-btn"  ng-click="showFeedback()" ></div> -->
+<!-- ng-if="cardData.type === 'summary' && cardData.active" -->

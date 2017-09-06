@@ -1,0 +1,8 @@
+<div class="patient-data-info-box">
+  <div class="patient-info-content">
+    <div class="pathways-caret-right-orange" ng-click="showInfo()" ng-show="hideInfoData"></div>
+    <div class="pathways-caret-down-orange" ng-click="hideInfo()" ng-show="!hideInfoData"></div>
+    <div class="patient-info-title">View relevant EHR patient Data</div>
+    <div class="pathways-mini-panel-contents" ng-bind-html="makeSafe(patientDataCtrl.patientInfo)" ng-show="!hideInfoData"></div>
+  </div>
+</div>

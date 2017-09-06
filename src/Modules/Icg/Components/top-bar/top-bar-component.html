@@ -1,0 +1,49 @@
+<div id="icg-top-bar">
+    <div class="pathways-top-logo-panel"></div>
+    <div class="recommendations-search-box">
+      <input type="text" id="search-entry" class="search-entry-box" placeholder="Search UpToDate" autocomplete="off" >
+      <div class="search-button" id="pathways-search-btn"></div>
+      <div id="search-results">
+        <div class="search-option">Afib</div>
+        <div class="search-option">Alter result</div>
+      </div>
+    </div>
+
+    <div id="icg-topbar-links-row">
+      <div class="icg-topbar-user-name" >Dr. Smith, Peter K</div><div ng-if="!displayUserOptions" class="pathways-down-arrow" ng-click="showUserOptions(e)"></div><div class="pathways-side-arrow" ng-if="displayUserOptions" ng-click="hideUserOptions()"></div>
+      <div id="user-info-dropdown" ng-if="displayUserOptions">
+        <div class="pathways-account-item">My UpToDate</div>
+        <div class="pathways-account-item">Help</div>
+        <div class="pathways-account-item">Logout</div>
+      </div>
+    </div>
+    <div id="icg-version-number">Version 0.0822</div>
+  <div id="pathways-hidden-menu-btn" ng-click="showHidden = !showHidden">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </div>
+  <div id="pathways-search-mobile-panel" ng-show="topbarCtrl.showMobileBand">
+    <div id="icg-search-box-hidden">Search UpToDate<div class="pathways-search-icon"></div></div>
+  </div>
+  <div id="icg-masthead-title-band" >
+    <div class="icg-topbar-title" >{{topbarTitle}}</div>
+    <div id="icg-topbar-selections" ng-show="showTopLinks" >
+      <div class="icg-topbar-main-link" ng-repeat="link in topLinks track by $index" ng-click="goLink(link)">{{link}}</div>
+    </div>
+  </div>
+</div>
+<div id="pathways-hidden-menu" ng-if="showHidden" >
+    <div class="pathways-hidden-menu-item" >Welcome <span class="icg-topbar-link">Dr. Smith, Peter K</span></div>
+    <div class="pathways-hidden-menu-item">My Account</div>
+    <div class="pathways-hidden-menu-item" ng-click="showPathways()">Show all Pathways</div>
+    <div class="pathways-hidden-menu-item" ng-repeat="link in topLinks track by $index">{{link}}</div>
+    <div class="pathways-hidden-menu-item" ng-click="showPolicy()">Disclaimer</div>
+    <div class="pathways-hidden-menu-item" >Support Info</div>
+    <div class="pathways-hidden-menu-item" >Editorial Policy</div>
+    <div class="pathways-hidden-menu-item" >Send Feedback</div>
+
+    </div>
+  </ul>
+
+</div>
+
+

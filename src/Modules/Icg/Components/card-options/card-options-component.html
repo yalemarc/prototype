@@ -1,0 +1,66 @@
+
+<div class="icg-card-options" ng-show="questionItem.active">
+    <b>{{questionItem.question}}</b>
+<div>
+  <!-- <div class="pathways-options-icon"></div> -->
+    <div class="pathways-options-section">
+      <div ng-repeat="item in questionItem.options track by $index" class="icg-option-selection">
+        <div class="icg-option-radio" ng-if="item.type !== 'checkbox'">
+            <div class="pathways-radio-btn-off"
+                ng-show="!item.value"
+                ng-click="setSelected(this,true)"
+                id={{item.id}}>
+            </div>
+            <div class="pathways-radio-btn-selected"
+                ng-show="item.value"
+                ng-click="setSelected(this,false)"
+                id={{item.id}}>
+            </div>
+
+        </div>
+        <div class="icg-option-radio" ng-if="item.type === 'checkbox'">
+            <div class="pathways-checkbox-off"
+                ng-show="!item.checked"
+                ng-click="setSelected(this,true)"
+                id={{item.id}}>
+            </div>
+            <div class="pathways-checkbox-selected"
+                ng-show="item.checked"
+                ng-click="setSelected(this,false)"
+                id={{item.id}}>
+            </div>
+
+        </div>
+        <div class="icg-radio-label"
+          ng-show="!item.value"
+          ng-click="setSelected(this,true)">{{item.label}}
+        </div>
+        <div class="icg-radio-label"
+          ng-show="item.value"
+          ng-click="setSelected(this,false)">{{item.label}}
+        </div>
+        <div class="patient-data-icon" id="{{item.id}}-icon" ng-click="showEHRData(item.id)">EHR</div>
+      </div>
+    </div>
+  </div>
+  <chad-vas-panel
+    ng-if="showSubmitOverview">
+  </chad-vas-panel>
+  <has-bled-calc
+    ng-if="showHasBledScore"
+    card-data = "cardData"
+    bled-count = "bledCount">
+  </has-bled-calc>
+
+  <div class="pathways-button-container" ng-if="showCalcNextBtn">
+    <div class="pathways-standard-btn"
+          ng-click="submitOverviewCalc()"
+          >
+          Next</div>
+  </div>
+  <br>
+
+  <div class="pathways-summary-btn" ng-click="showSummary()" ng-if="showSummaryBtn">Continue to Summary</div>
+</div>
+
+<!-- <div id="{{btnId}}" class="icg-continue-btn inactive">Continue </div> -->

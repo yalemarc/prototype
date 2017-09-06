@@ -1,0 +1,10 @@
+<div>
+  <div class="pathways-warning-title" >Required Tests<div class="pathways-count-container" ng-show = "showCarets" ng-click="showRequiredTests=!showRequiredTests">{{requiredCt}}</div></div>
+    <div class="pathways-carets" ng-show = "showCarets">
+      <div class="pathways-exclusion-caret-right" ng-show="!showRequiredTests" ng-click="showRequiredTests=!showRequiredTests"></div>
+      <div class="pathways-exclusion-caret-down" ng-click="showRequiredTests=!showRequiredTests" ng-show="showRequiredTests"></div>
+    </div>
+    <div class="pathways-exclusion-disclaimer">{{requiredTestsCtrl.requiredDisclaimer}}</div>
+    <div class="pathways-list-container" ng-bind-html="makeSafe()" ng-show="showRequiredTests"></div>
+
+</div>

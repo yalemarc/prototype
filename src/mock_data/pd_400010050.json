@@ -1,0 +1,136 @@
+{
+  "patientData":[
+    {
+      "pathway":"108537",
+      "pathwayData": [
+        {
+          "node":"201",
+          "exclusions": "",
+          "questions": [
+            {
+              "question": 1,
+              "id": ["201-301"]
+            }
+          ],
+          "relevantData":[
+            {
+              "label":"Laboratory Results",
+              "desc": "Hemoglobin A1c: 9.6%; 08/01/2017 13:02"
+            }
+          ]
+        } , {
+          "node":"301",
+          "exclusions": "",
+          "questions": [
+            {
+              "question": 0,
+              "id": ["301-402"]
+            }
+          ],
+          "relevantData":[
+            {
+              "label":"Laboratory Results",
+              "desc": "Hemoglobin A1c: 9.6%; 08/01/2017 13:02"
+            }
+          ]
+        } , {
+          "node":"600",
+          "exclusions": "",
+          "questions": [
+            {
+
+            }
+          ],
+          "relevantData":[
+            {
+              "label":"Conditions",
+              "desc": "Chronic alcoholic liver disease; onset: 2016; active"
+            } ,
+            {
+              "label":"Social History",
+              "desc": "Alcohol use: Heavy drinker"
+            } ,
+            {
+              "label":"Laboratory Results",
+              "desc": "Estimated Glomerular Filtration Rate (eGFR)(MDRD);06/11/2017 15:27<ul><li>eGFR if Non-African American: 46.63 mL/min/1.73m2</li><li>eGFR if African American: 56.43 mL/min/1.73m2</li></ul>"
+            }
+          ]
+        } , {
+          "node":"601",
+          "exclusions": "",
+          "questions": [
+            {
+              "question": 0,
+              "id": ["601-702"]
+            }
+          ],
+          "relevantData":[
+            {
+              "label":"Social History",
+              "desc": "Alcohol use: Heavy drinker"
+            }
+          ]
+        } , {
+          "node":"700",
+          "exclusions": "",
+          "questions": [
+            {
+              "question": 0,
+              "id": ["700-800"]
+            }
+          ],
+          "relevantData":[
+            {
+              "label":"Social History",
+              "desc": "Alcohol use: Heavy drinker"
+            }
+          ]
+        } , {
+          "node":"702",
+          "exclusions": "",
+          "questions": [
+            {
+
+            }
+          ],
+          "relevantData":[
+            {
+              "label":"Conditions",
+              "desc": "Chronic alcoholic liver disease; onset: 2016; active"
+            } ,
+            {
+              "label":"Social History",
+              "desc": "Alcohol use: Heavy drinker"
+            } ,
+            {
+              "label":"Laboratory Results",
+              "desc": "Estimated Glomerular Filtration Rate (eGFR)(MDRD);06/11/2017 15:27<ul><li>eGFR if Non-African American: 46.63 mL/min/1.73m2</li><li>eGFR if African American: 56.43 mL/min/1.73m2</li></ul>"
+            }
+          ]
+        } , {
+          "node":"703",
+          "exclusions": "",
+          "questions": [
+            {
+
+            }
+          ],
+          "relevantData":[
+            {
+              "label":"Conditions",
+              "desc": "Chronic alcoholic liver disease; onset: 2016; active"
+            } ,
+            {
+              "label":"Social History",
+              "desc": "Alcohol use: Heavy drinker"
+            } ,
+            {
+              "label":"Laboratory Results",
+              "desc": "Estimated Glomerular Filtration Rate (eGFR)(MDRD);06/11/2017 15:27<ul><li>eGFR if Non-African American: 46.63 mL/min/1.73m2</li><li>eGFR if African American: 56.43 mL/min/1.73m2</li></ul>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

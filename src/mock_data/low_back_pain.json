@@ -1,0 +1,713 @@
+{
+  "pathway":[
+    [ {
+      "type": "overview/n",
+      "active": true,
+      "statement": "Overview",
+      "status" : "active",
+      "id": "01",
+      "ref": "0",
+      "warning": "There are <strong>no warnings</strong> for this UpToDate Pathway",
+      "warnings": false,
+      "exclusions": "This Interactive Clinical Guideline <strong>is not</strong> appropriate for patients with any of the following exclusions:<br><ul><li>Pain present for >4 weeks</li><li>Age <18 years</li><li>Pregnant or breastfeeding</li><ul>",
+      "questions" : [
+        {
+          "question": "Is this Interactive Clinical Guideline appropriate for this patient?",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "Yes", "value": false, "id":"01-100", "warning":false},
+            {"label": "No", "value": false, "id": "01-0", "warning":true}
+          ],
+          "content": "<h3>Scope<\/h3>\r\n   This Interactive Clinical Guideline will help guide clinicians in the evaluation of adults with acute, non-traumatic low back pain. The evaluation may include a trial of conservative therapy, imaging of the lumbar spine, and\/or evaluation of serum inflammatory markers. Choosing the correct approach depends on the patient's presentation and risk factors for malignancy, infection, and vertebral compression fractures.\r\n <\/ul>"
+            ,
+          "requiredTests": [
+            {"label": "MRI of the lumbar spine", "type":"list"},
+            {"label": "CT of the lumbar spine", "type":"list"},
+            {"label": "Plain film of the lumbar spine", "type":"list"},
+            {"label": "Erythrocyte sedimentation rate (ESR)", "type":"list"},
+            {"label": "C-reactive protein (CRP)", "type":"list"}
+          ],
+          "requiredTestsDisclaimer": "No test results are required to answer the questions that will follow. However, if testing has already been done, the results will be taken into account. Relevant prior testing includes:",
+          "warning": "This Interactive Clinical Guideline is not appropriate for this patient because one or more exclusions are present. For additional information on the approach to patients not covered by this Interactive Clinical Guideline, please refer to <a href=''>Related UpToDate Content</a>. Close the browser tab to exit the Interactive Clinical Guideline",
+          "warningMessage": "There are <strong>no warnings</strong> for this UpToDate Pathway",
+          "warnings": false,
+          "exclusions": "This Interactive Clinical Guideline <strong>is not</strong> appropriate for patients with any of the following exclusions:<br><ul><li>Pain present for >4 weeks</li><li>Age <18 years</li><li>Pregnant or breastfeeding</li><ul>",
+          "exclusionList": [
+            {"label": "Pain present for >4 weeks","trigger":"pain","exclude": false,"type":"label" },
+            {"label": "Age <18 years","trigger":"age","exclude": false,"type":"label" },
+            {"label": "Pregnant or breastfeeding","trigger":"pregnant","exclude": false,"type":"label" }
+          ]
+        }
+
+      ],
+      "disclaimer": "",
+      "updated": "01/09/2017"
+    } ],
+    [ {
+      "type": "start",
+      "active": false,
+      "statement": "Evidence of spinal cord~or cauda equina compression?",
+      "status" : "off",
+      "id": "100",
+      "ref": "01",
+      "questions": [
+        {
+          "question": "",
+          "summaryDescription": "Evidence of spinal cord or cauda equina compression:",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "Yes", "value": false, "id": "100-200"},
+            {"label": "No", "value": false, "id": "100-201"}
+          ],
+          "content": "<strong>Does the patient have signs or symptoms of <span guid=\"1fa41b67-0949-4c31-9b03-7c1780191848\" class=\"reference reference_enabled\">spinal cord or cauda equina compression</span>?</strong><br><br>Compression is suggested if the patient has evidence of cauda equina syndrome (new urinary retention, fecal or urinary incontinence, or saddle anesthesia) or if there are severe neurologic deficits (progressive motor weakness or motor weakness at multiple neurologic levels).<br><br>Cauda equina syndrome accounts for approximately 0.04% of patients in primary care who present with low back pain.</div>",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+    } ],
+    [ {
+      "type": "end",
+      "active": false,
+      "statement": "Refer to emergency department",
+      "status" : "off",
+      "response" : "Yes",
+      "id": "200",
+      "ref": "100",
+      "questions": [
+        {
+          "question": "Select referral",
+          "summaryDescription": "Approach Chosen: Refer to emergency department",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "Yes", "value": false, "id": "100-summary-1"},
+            {"label": "No", "value": false, "id": "100-201"}
+          ],
+          "content": "<strong>Because the patient has signs and/or symptoms of spinal cord compression, the patient should be referred to the emergency department for emergency imaging (typically MRI) and management.</strong>",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+    } , {
+      "type": "question",
+      "active": false,
+      "statement": "Evaluation done for the CURRENT~EPISODE of acute low back pain",
+      "status" : "off",
+      "response" : "No",
+      "id": "201",
+      "ref": "100",
+      "questions": [
+        {
+          "question": "",
+          "summaryDescription": "Risk factors for antibiotic resistance:",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "No prior evaluation", "value": false, "id": "201-300"},
+            {"label": "Plain film of the lumbar spine only", "value": false, "id": "201-301"},
+            {"label": "ESR and/or CRP, no imaging", "value": false, "id": "201-302"},
+            {"label": "Plain film of the lumbar spine plus and ESR and/or CRP", "value": false, "id": "201-303"},
+            {"label": "MRI or CT scan of the lumbar spine (with or without an ESR, CRP, or plain spine film", "value": false, "id": "201-304"}
+          ],
+          "content": "<strong>What imaging and/or laboratory evaluation has the patient had for the current episode of acute low back pain?</strong>",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+    } ],
+    [ {
+      "type": "continue",
+      "active": false,
+      "statement": "No prior evaluation",
+      "status" : "off",
+      "response" : "",
+      "id": "300",
+      "ref": "201",
+      "questions": [
+        {
+          "question": "Does the patient have a current or recent (within 5 years) history of cancer other than nonmelanoma skin cancer or a remote history of breast cancer",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "Yes", "value": false, "id":"403-500", "warning":false},
+            {"label": "No", "value": false, "id": "403-501", "warning":true}
+          ],
+          "content": "Spinal involvement from metastatic disease should be considered in patients with a current or recent (within 5 years) history of cancer. Cancers that are particularly concerning for spinal involvement include multiple myeloma and cancer of the breast, lung, prostate, thyroid, or kidney.<br><br>While the majority of breast cancer recurrences occur within the first five years of diagnosis, particularly with hormone receptor-negative or human epidermal growth factor receptor 2 (HER2)-positive disease, some recurrences occur much later, particularly in the setting of hormone receptor-positive, HER2-negative tumors. Therefore, obtaining imaging in patients with a remote history of breast cancer is appropriate.",
+          "warning": "",
+          "warningMessage": "",
+          "warnings": false
+        }
+      ],
+      "updated": ""
+    }, {
+      "type": "continue",
+      "active": false,
+      "statement": "Plain film of the lumbar spine only",
+      "status" : "off",
+      "response" : "",
+      "id": "301",
+      "ref": "201",
+      "questions" : [
+        {
+          "question": "Does the plain film of the lumbar spine reveal evidence of cancer, infection,or a vertebral compression?",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "Yes", "value": false, "id":"01-50", "warning":false},
+            {"label": "No", "value": false, "id": "01-0", "warning":true}
+          ],
+          "content": "",
+          "warning": "",
+          "warningMessage": "",
+          "warnings": false
+        }
+      ],
+      "updated": ""
+    }, {
+      "type": "continue",
+      "active": false,
+      "statement": "ESR and/or CRP, no imaging",
+      "response" : "",
+      "id": "302",
+      "ref": "201",
+      "questions": [
+        {
+          "question": "Is the ESR and/or CRP significantly elevated?",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "Yes", "value": false, "id":"302-402", "warning":false},
+            {"label": "No", "value": false, "id": "302-402", "warning":true}
+          ],
+          "content": "CRP levels greater than 1 mg/dL or high-sensitivity CRP levels greater than 10 mg/L are believed to reflect significant inflammation. For the ESR, the upper limit of normal (ULN) depends on the patient's age and sex.<br><br><ul><li>Men: ULN = age in years/2</li><li>Women: ULN = (age +10)/2</li></ul>Higher ESR levels are more likely to be associated with significant inflammation (eg, in one study, an ESR &gt;20 mm/hour was 78% sensitive and 67% specific for detecting cancer, whereas an ESR &gt;50 mm/hour was 56% sensitive and 97% specific).<br><br><strong>",
+          "warning": "",
+          "warningMessage": "",
+          "warnings": false
+        }
+      ],
+      "updated": ""
+    }, {
+      "type": "continue",
+      "active": false,
+      "statement": "Plain film lumbar spine~plus ESR and/or CRP.",
+      "status" : "off",
+      "response" : "",
+      "id": "303",
+      "ref": "201",
+      "goTo": "403",
+      "questions": [
+        {
+          "question": "Does the plain film of the lumbar spine reveal evidence of cancer, infection,or a vertebral compression?",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "Yes", "value": false, "id":"403-500", "warning":false},
+            {"label": "No", "value": false, "id": "403-501", "warning":true}
+          ],
+          "content": "",
+          "warning": "",
+          "warningMessage": "",
+          "warnings": false
+        }
+      ],
+      "updated": ""
+    } , {
+      "type": "continue",
+      "active": false,
+      "statement": "MRI or CT lumbar spine with/without~ESR,CRP,plain spine film.",
+      "status" : "off",
+      "response" : "",
+      "id": "304",
+      "ref": "201",
+      "questions": [
+        {
+          "question": "Select an approach.",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "Trial of conservative therapy", "value": false, "id":"304-404", "warning":false},
+            {"label": "Refer to oncology", "value": false, "id":"304-404", "warning":false},
+            {"label": "Refer to infectious disease specialist", "value": false, "id":"304-404", "warning":false},
+            {"label": "Refer to a spine surgeon", "value": false, "id":"304-404", "warning":false},
+            {"label": "Refer to oncology and a spine surgeon", "value": false, "id":"304-404", "warning":false},
+            {"label": "Refer to infectious disease specialist and a spine surgeon", "value": false, "id":"304-404", "warning":false},
+            {"label": "Treat for vertebral compression fracture", "value": false, "id":"304-404", "warning":false},
+            {"label": "Approach other than the options provided (this approach may differ from the recommendations of UpToDate", "value": false, "id":"304-404", "warning":false}
+          ],
+          "content": "<hr><strong>Because the patient has already had an advanced imaging study (MRI or CT), management should be based on the results of MRI or CT.</strong><hr>If the imaging is normal, additional imaging is typically not indicated and a trial of conservative therapy</span> for 4 to 6 weeks is appropriate. For patients with normal imaging but a high suspicion for metastases or infection, early followup with repeat imaging may be appropriate, though depending on the clinical suspicion, urgent evaluation may be needed. Consulting with a radiologist can help determine the timing and type of evaluation that is most appropriate for a patient who is high-risk but has normal imaging.&nbsp;If a vertebral compression&nbsp;fracture is seen, appropriate treatment</span> should be initiated. <br><br>Additional&nbsp;<strong>urgent&nbsp;evaluation</strong>&nbsp;is required&nbsp;if &nbsp;the imaging suggests new or progressive metastases or infection, or if the imaging is non-specific but the clinical suspicion for metastases or infection remains high. As above, consulting with a radiologist can help determine the appropriate approach for a given patient.<br><br>The additional evaluation may include:<br><ul><li>Additional imaging (eg, bone scan, repeat MRI or CT, plain films)</li><li>Infectious disease evaluation and/or consultation (if infection or abscess is seen/suspected)</li><li>Malignancy evaluation and/or oncology consultation (if metastases are seen/suspected)</li></ul>In addition,&nbsp;<strong>urgent evaluation by a spine surgeon </strong>(eg, a neurosurgeon or orthopedic surgeon)&nbsp;is often indicated for patients with imaging evidence of spinal infection or metastases&nbsp;to assess for spinal instability and to assess surgical options.<br><br><strong>",
+          "warning": "",
+          "warningMessage": "",
+          "warnings": false
+        }
+      ],
+      "updated": ""
+    }
+    ],
+    [
+      {
+        "type": "summary",
+        "active": false,
+        "statement": "Interactive Clinical Guideline Complete",
+        "status" : "off",
+        "ref": "9000",
+        "response": "Yes",
+        "id": "summary",
+        "questions": [
+          {
+            "question": "",
+            "active": false,
+            "optionType": "single",
+            "options": [
+
+            ],
+            "content": ""
+          }
+        ],
+        "disclaimer": "",
+        "updated": ""
+      }
+    ]
+  ],
+  "mainTitle" : "Low back pain: Evaluation of an adult with acute, non-traumatic low back pain",
+  "subLevels" : [{
+    "sublevel-300": [
+      [{
+      "type": "subLevel",
+      "active": true,
+      "statement":"Current or recent cancer history~(excluding nonmelanoma skin cancer)?",
+      "status" : "active",
+      "response" : "",
+      "id": "400",
+      "ref": "300",
+      "questions": [
+        {
+          "question": "",
+          "summaryDescription": "FOR TESTING ONLY FIX!!:",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "yes", "value": false, "id": "201-300"},
+            {"label": "no", "value": false, "id": "201-300"}
+          ],
+          "content": "<strong>What imaging and/or laboratory evaluation has the patient had for the current episode of acute low back pain?</strong>",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+      }]
+    ],
+    "sublevel-301" : [
+       [{
+      "type": "subLevel",
+      "active": true,
+      "statement": "Radiographic evidence of cancer~infection, or vertebral fracture",
+      "status" : "active",
+      "response" : "",
+      "id": "401",
+      "ref": "301",
+      "questions": [
+        {
+          "question": "",
+          "summaryDescription": "Radio FOR TESTING ONLY FIX!!:",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "yes", "value": false, "id": "401-501"},
+            {"label": "no", "value": false, "id": "401-502"}
+          ],
+          "content": "<strong>FOR TESTING ONLY FIX!!Radiographic evidence of cancer~infection, or vertebral fracture</strong>",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+      }],[{
+      "type": "question",
+      "active": false,
+      "statement": "Evaluation and management~based on findings",
+      "status" : "off",
+      "response" : "",
+      "id": "501",
+      "ref": "401",
+      "questions": [
+        {
+          "question": "",
+          "summaryDescription": "Risk factors for antibiotic resistance:",
+          "active": true,
+          "optionType": "single",
+          "options": [
+
+          ],
+          "content": "<strong>>FOR TESTING ONLY FIX!!Evaluation and management~based on findings</strong>",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+      },{
+      "type": "question",
+      "active": false,
+      "statement": "Current or recent cancer history~(excluding nonmelanoma skin cancer)?",
+      "status" : "off",
+      "response" : "",
+      "id": "502",
+      "ref": "401",
+      "questions": [
+        {
+          "question": "",
+          "summaryDescription": "Risk factors for antibiotic resistance:",
+          "active": true,
+          "optionType": "single",
+          "options": [
+                      ],
+          "content": "<strong>FOR TESTING ONLY FIX!!Current or recent cancer history~(excluding nonmelanoma skin cancer)</strong>",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+      }
+      ]
+    ],
+    "sublevel-302" : [
+       [{
+      "type": "subLevel",
+      "active": true,
+      "statement": "ESR and/or CRP~significantly elevated?",
+      "status" : "active",
+      "response" : "",
+      "id": "402",
+      "ref": "302",
+      "questions": [
+        {
+          "question": "",
+          "summaryDescription": "FOR TESTING ONLY FIX!!:",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "yes", "value": false, "id": "401-501"},
+            {"label": "no", "value": false, "id": "401-502"}
+          ],
+          "content": "<strong>FOR TESTING ONLY FIX!!ESR and/or CRP~significantly elevated?</strong>",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+      }],[{
+      "type": "question",
+      "active": false,
+      "statement": "Evaluation and management~based on findings",
+      "status" : "off",
+      "response" : "",
+      "id": "502",
+      "ref": "402",
+      "questions": [
+        {
+          "question": "",
+          "summaryDescription": "Risk factors for antibiotic resistance:",
+          "active": true,
+          "optionType": "single",
+          "options": [
+                ],
+          "content": "<strong>>FOR TESTING ONLY FIX!!Evaluation and management~based on findings</strong>",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+      },{
+      "type": "question",
+      "active": false,
+      "statement": "Current or recent cancer history~(excluding nonmelanoma skin cancer)?",
+      "status" : "off",
+      "response" : "",
+      "id": "503",
+      "ref": "402",
+      "questions": [
+        {
+          "question": "",
+          "summaryDescription": "Risk factors for antibiotic resistance:",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            ],
+          "content": "<strong>FOR TESTING ONLY FIX!!Current or recent cancer history~(excluding nonmelanoma skin cancer)</strong>",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+      }
+      ]
+    ],
+    "sublevel-303" : [
+       [{
+      "type": "subLevel",
+      "active": true,
+      "statement": "Radiographic evidence of cancer~infection, or vertebral fracture?",
+      "status" : "active",
+      "response" : "",
+      "id": "403",
+      "ref": "303",
+      "questions": [
+        {
+          "question": "Does the plain film of the lumbar spine reveal evidence of cancer, infection,or a vertebral compression?",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "Yes", "value": false, "id":"01-50", "warning":false},
+            {"label": "No", "value": false, "id": "01-0", "warning":true}
+          ],
+          "content": "",
+          "warning": "",
+          "warningMessage": "",
+          "warnings": false
+        }
+      ],
+      "updated": ""
+      }],[{
+      "type": "question",
+      "active": false,
+      "statement": "Evaluation and management~based on findings",
+      "status" : "off",
+      "response" : "",
+      "id": "500",
+      "ref": "403",
+      "questions": [
+        {
+          "question": "",
+          "summaryDescription": "Risk factors for antibiotic resistance:",
+          "active": true,
+          "optionType": "single",
+          "options": [
+          ],
+          "content": "<strong>>FOR TESTING ONLY FIX!!Evaluation and management~based on findings</strong>",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+      },{
+      "type": "question",
+      "active": false,
+      "statement": "Current or recent cancer history~(excluding nonmelanoma skin cancer)?",
+      "status" : "off",
+      "response" : "",
+      "id": "501",
+      "ref": "403",
+      "questions": [
+        {
+          "question": "",
+          "summaryDescription": "Risk factors for antibiotic resistance:",
+          "active": true,
+          "optionType": "single",
+          "options": [
+           ],
+          "content": "<strong>FOR TESTING ONLY FIX!!Current or recent cancer history~(excluding nonmelanoma skin cancer)</strong>",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+      }],[{
+      "type": "question",
+      "active": false,
+      "statement": "Imaging suggested, ideally~guided by oncology input",
+      "status" : "off",
+      "response" : "",
+      "id": "600",
+      "ref": "501",
+      "questions": [
+        {
+          "question": "",
+          "summaryDescription": "Risk factors for antibiotic resistance:",
+          "active": true,
+          "optionType": "single",
+          "options": [
+           ],
+          "content": "<strong>>FOR TESTING ONLY FIX!!Evaluation and management~based on findings</strong>",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+      },{
+      "type": "question",
+      "active": false,
+      "statement": "ESR and/or CRP~significantly elevated?",
+      "status" : "off",
+      "response" : "",
+      "id": "601",
+      "ref": "501",
+      "questions": [
+        {
+          "question": "",
+          "summaryDescription": "Risk factors for antibiotic resistance:",
+          "active": true,
+          "optionType": "single",
+          "options": [
+
+          ],
+          "content": "<strong>FOR TESTING ONLY FIX!!Current or recent cancer history~(excluding nonmelanoma skin cancer)</strong>",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+      }],[{
+      "type": "question",
+      "active": false,
+      "statement": "What is the likelihood~of infection?",
+      "status" : "off",
+      "response" : "",
+      "id": "700",
+      "ref": "601",
+      "questions": [
+        {
+          "question": "",
+          "summaryDescription": "Risk factors for antibiotic resistance:",
+          "active": true,
+          "optionType": "single",
+          "options": [
+
+          ],
+          "content": "<strong>>FOR TESTING ONLY FIX!!Evaluation and management~based on findings</strong>",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+      },{
+      "type": "question",
+      "active": false,
+      "statement": "Conservative treatment~for 4 to 6 weeks",
+      "status" : "off",
+      "response" : "",
+      "id": "701",
+      "ref": "601",
+      "questions": [
+        {
+          "question": "",
+          "summaryDescription": "Risk factors for antibiotic resistance:",
+          "active": true,
+          "optionType": "single",
+          "options": [
+
+          ],
+          "content": "<strong>FOR TESTING ONLY FIX!!Current or recent cancer history~(excluding nonmelanoma skin cancer)</strong>",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+      }],[{
+      "type": "question",
+      "active": false,
+      "statement": "Order an advanced~imaging study",
+      "status" : "off",
+      "response" : "",
+      "id": "800",
+      "ref": "700",
+      "questions": [
+        {
+          "question": "",
+          "summaryDescription": "Risk factors for antibiotic resistance:",
+          "active": true,
+          "optionType": "single",
+          "options": [
+
+          ],
+          "content": "<strong>>FOR TESTING ONLY FIX!!Evaluation and management~based on findings</strong>",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+      },{
+      "type": "question",
+      "active": false,
+      "statement": "Conservative treatment~for 4 to 6 weeks",
+      "status" : "off",
+      "response" : "",
+      "id": "801",
+      "ref": "700",
+      "questions": [
+        {
+          "question": "",
+          "summaryDescription": "Risk factors for antibiotic resistance:",
+          "active": true,
+          "optionType": "single",
+          "options": [
+
+          ],
+          "content": "<strong>FOR TESTING ONLY FIX!!Current or recent cancer history~(excluding nonmelanoma skin cancer)</strong>",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+      }]
+    ],
+    "sublevel-304" : [
+       [{
+      "type": "subLevel",
+      "active": true,
+      "statement": "ESR and/or CRP~significantly elevated?",
+      "status" : "active",
+      "response" : "",
+      "id": "400",
+      "ref": "304",
+      "questions": [
+        {
+          "question": "",
+          "summaryDescription": "FOR TESTING ONLY FIX!!:",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "yes", "value": false, "id": "401-501"},
+            {"label": "no", "value": false, "id": "401-502"}
+          ],
+          "content": "<strong>FOR TESTING ONLY FIX!!ESR and/or CRP~significantly elevated?</strong>",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+      }],[{
+      "type": "question",
+      "active": false,
+      "statement": "Evaluation and management~based on findings",
+      "status" : "off",
+      "response" : "",
+      "id": "500",
+      "ref": "400",
+      "questions": [
+        {
+          "question": "",
+          "summaryDescription": "Risk factors for antibiotic resistance:",
+          "active": true,
+          "optionType": "single",
+          "options": [
+
+          ],
+          "content": "<strong>>FOR TESTING ONLY FIX!!Evaluation and management~based on findings</strong>",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+      },{
+      "type": "question",
+      "active": false,
+      "statement": "Current or recent cancer history~(excluding nonmelanoma skin cancer)?",
+      "status" : "off",
+      "response" : "",
+      "id": "501",
+      "ref": "400",
+      "questions": [
+        {
+          "question": "",
+          "summaryDescription": "Risk factors for antibiotic resistance:",
+          "active": true,
+          "optionType": "single",
+          "options": [
+
+          ],
+          "content": "<strong>FOR TESTING ONLY FIX!!Current or recent cancer history~(excluding nonmelanoma skin cancer)</strong>",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+      }
+      ]
+
+    ]
+  }]
+}

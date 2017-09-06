@@ -1,0 +1,457 @@
+{
+  "pathway":[ [ {
+      "type": "overview",
+      "active": true,
+      "statement": "Overview",
+      "status" : "active",
+      "id": "01",
+      "ref": "0",
+      "questions" : [
+        {
+          "question": "Is this Interactive Clinical Guideline appropriate for this patient?",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "Yes", "value": false, "id":"01-100", "warning":false},
+            {"label": "No", "value": false, "id": "01-0", "warning":true}
+          ],
+          "content": "<h3>Scope</h3>          This Interactive Clinical Guideline (ICG) will help guide clinicians in selecting therapy for an adult with Helicobacter pylori infection who has not previously been treated. Several guidelines address the management of H. pylori. The recommendations in this ICG generally represent the recommendations from the Toronto guidelines.<br><br><strong><mark>If any alarm symptoms are present the patient should undergo upper endoscopy for further evaluation  in addition to receiving treatment for H. pylori.</mark></strong> Alarm symptoms include anemia, early satiety, unexplained weight loss, dysphagia, odynophagia, recurrent vomiting, a family history of gastrointestinal cancer, and previous esophagogastric malignancy.\n            <p>Last updated 12/12/2016</p><h3>Exclusions</h3>            This ICG <strong>is not</strong> appropriate for patients with any of the following exclusions:<br>       <ul><li >Prior treatment for H. pylori</li>            <li>Age <18 years</li>            <li>Pregnant or breastfeeding</li></ul>           <div><strong>Required Tests</strong><br><br>No test results other than an initial test that is positive for H. pylori infection are needed in order to complete this ICG.<br>&nbsp;</div>",
+          "warning": "This Interactive Clinical Guideline is not appropriate for this patient because one or more exclusions are present. For additional information on the approach to patients not covered by this Interactive Clinical Guideline, please refer to <a href=\"\">Related UpToDate Content</a>. Close the browser tab to exit the Interactive Clinical Guideline"
+        }
+      ],
+      "disclaimer": "",
+      "updated": "12/12/2016"
+    } ], [ {
+      "type": "start",
+      "active": false,
+      "statement": "Risk factors for~antibiotic resistance?",
+      "status" : "off",
+      "id": "100",
+      "ref": "01",
+      "questions": [
+        {
+          "question": "",
+          "summaryDescription": "Risk factors for antibiotic resistance:",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "Yes", "value": false, "id": "100-200"},
+            {"label": "No", "value": false, "id": "100-201"}
+          ],
+          "content":"<strong>Risk factors for antibiotic resistance include:</strong><br><ul><li>Metronidazole use in the last three months</li><li>Macrolide (eg, clarithromycin, azithromycin, or erythromycin) use in the last three months</li><li>Residence in an area where H. pylori resistance to clarithromycin is ≥15% or where eradication rates with triple therapy are ≤85%&nbsp;</li></ul>In the United States, given the limited information on antimicrobial resistance rates, we generally assume clarithromycin resistance rates are ≥15% unless local data indicate otherwise.<br><br><strong>Does the patient have risk factors for antibiotic resistance?</strong>",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+    } ],[{
+      "type": "end",
+      "active": false,
+      "statement": "Treat with quadruple therapy~and confirm eradication",
+      "status" : "off",
+      "ref": "100",
+      "response": "Yes",
+      "id": "200",
+      "questions": [
+        {
+          "question": "Choose a treatment approach",
+          "num": 0,
+          "summaryDescription": "Management approach chosen:",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "Order medications individually", "value": false, "id": "200-question-1,2,3,4,5,6", "addSummary": {"type":"medication", "value": "A PPI, bismuth, a tetracycline derivative, and metronidazole will be used"}},
+            {"label": "Order a proton pump inhibitor plus a combination pill (Pylera)", "value": false, "id": "200-question-1,2,8"},
+            {"label": "Approach other than the options provided (this approach may differ from the recommendations of UpToDate)", "value": false, "id": "200-summary-3", "refNode": "node-200-100", "addSummary": {"type":"medication", "value": "Approach other than the options provided"}}
+          ],
+          "content": "<strong>Quadruple therapy for 14 days is appropriate for this patient.&nbsp;</strong>(<span class='pathway-add-info' id='q1-200-100' >Additional information</span>)<strong><br></strong><br>Quadruple therapy can be administered by providing each agent individually or by providing a PPI plus a combination pill (Pylera), which combines bismuth and the two antibiotics into a single pill.&nbsp;Combination pills may improve adherence, but may also be more expensive.<br><br>Quadruple therapy includes:<br><ul><li>A proton pump inhibitor (PPI)</li><li>Bismuth</li><li>A tetracycline derivative</li><li>Metronidazole</li></ul>",
+          "disclaimer": "",
+          "addInfoId": "q1-200-100",
+          "addInfoContent" : "<ul><li>Patients should be informed that adherence to treatment is a critical factor in determining the success of eradication therapy.&nbsp;</li><li>Because the regimen includes metronidazole, strict alcohol avoidance should be advised.&nbsp;</li></ul>"
+        },{
+
+          "question": "",
+          "num": 1,
+          "content": "<hr><br><u><div class='pathway-add-info-highlight' id='q2-200-100' >Important drug dosing information</div></u>",
+          "addInfoId": "q2-200-100",
+          "addInfoContent" : "The drug doses given&nbsp;generally&nbsp;represent the doses that are suggested for patients who do not require dose adjustments due to factors such as comorbid illnesses, organ dysfunction, drug interactions, or other reasons. In addition, some of the medications used in this Interactive Clinical Guideline should not be used concurrently with other medications because of drug interactions, so the interacting medication may need to be held during therapy or an alternative antibiotic regimen chosen (refer to&nbsp;<span>UpToDate content</span></span>&nbsp;for more details on alternative regimens).&nbsp;Consult a clinical drug reference, appropriate UpToDate topic reviews, and/or other resources to confirm the appropriate dosing for a given patient."
+        },{
+          "question": "",
+          "num": 2,
+          "summaryDescription": "Proton pump inhibitor chosen:",
+          "active": false,
+          "optionType": "single",
+          "options": [
+            {"label": "Esomeprazole 40 mg orally once daily for 14 days", "value": false, "id": "200-question-31-1", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Esomeprazole 20 mg orally once daily for 14 days", "value": false, "id": "200-question-31-2", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Lansoprazole 30 mg orally once daily for 14 days", "value": false, "id": "200-question-31-3", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Omeprazole 20 mg orally once daily for 14 days", "value": false, "id": "200-question-31-4", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Pantoprazole 40 mg orally once daily for 14 days", "value": false, "id": "200-question-31-5", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Rabeprazole 20 mg orally once daily for 14 days", "value": false, "id": "200-question-31-6", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Proton pump inhibitor at a dose or frequency other than the options provided (this approach may differ from the recommendations of UpToDate)", "value": false, "id": "200-question-31-7", "addSummary": {"type":"medication", "value": ""}}
+          ],
+          "content": "<hr><strong>Choose a PPI</strong> (<span class='pathway-add-info' id='q3-200-100'>Additional information</span>)",
+          "addInfoId": "q3-200-100",
+          "addInfoContent" : "If esomeprazole is chosen, it can either be given as 40 mg once daily or 20 mg twice daily. The Toronto Consensus guideline considers 20 mg twice daily to be the standard dose for the treatment of H. pylori."
+        },{
+          "question": "Select a tetracycline derivative.",
+          "num": 3,
+          "summaryDescription": "Tetracyline-derivative chosen:",
+          "active": false,
+          "optionType": "single",
+          "options": [
+            {"label": "Tetracycline 500 mg orally four times daily for 14 days (preferred if available)", "value": false, "id": "200-question-3-1", "addSummary": {"type":"medication", "value": ""}},
+            {"label": "Doxycycline 100 mg orally twice daily for 14 days", "value": false, "id": "200-question-3-2", "addSummary": {"type":"medication", "value": ""}},
+            {"label": "Tetracycline-derivative at a dose or frequency other than the options provided (this approach may differ from the recommendations of UpToDate)", "value": false, "id": "200-question-3-3", "addSummary": {"type":"medication", "value": ""}}
+          ],
+          "content": "<hr>",
+          "disclaimer": ""
+        },{
+          "question": "Select bismuth subsalicylate.",
+          "num": 4,
+          "summaryDescription": "Bismuth subsalicylate dose chosen:",
+          "active": false,
+          "optionType": "single",
+          "options": [
+            {"label": "Bismuth subsalycilate 524 mg orally four times daily for 14 days", "value": false, "id": "200-question-4-1", "addSummary": {"type":"medication", "value": ""}},
+            {"label": "Bismuth subsalycilate at a dose or frequency other than the option provided (this approach may differ from the recommendations of UpToDate)", "value": false, "id": "200-question-4-2", "addSummary": {"type":"medication", "value": ""}}
+          ],
+          "content": "<hr>",
+          "disclaimer": ""
+        },{
+          "question": "Select metronidazole.",
+          "num": 5,
+          "summaryDescription": "Metronidazole dose chosen:",
+          "summaryOverview": "The drug doses given in this Interactive Clinical Guideline generally represent the doses that are suggested for patients who do not require dose adjustments due to factors such as comorbid illnesses, organ dysfunction, drug interactions, or other reasons. Consult a clinical drug reference, appropriate UpToDate topic reviews, and/or other resources to confirm the appropriate dosing for a given patient. In addition, some of the medications used in this Interactive Clinical Guideline should not be used concurrently with other medications because of drug interactions, so the interacting medication may need to be held during therapy or an alternative antibiotic regimen chosen (refer to UpToDate content for more details on alternative regimens).",
+          "active": false,
+          "optionType": "single",
+          "options": [
+            {"label": "Metronidazole 250 mg orally four times daily for 14 days", "value": false, "id": "200-question-5-1", "addSummary": {"type":"medication", "value": ""}},
+            {"label": "Metronidazole at a dose or frequency other than the option provided (this approach may differ from the recommendations of UpToDate)", "value": false, "id": "200-question-5-2", "addSummary": {"type":"medication", "value": ""}}
+          ],
+          "content": "<hr>",
+          "disclaimer": ""
+        },{
+          "question": "Choose a testing approach.",
+          "num": 6,
+          "summaryOverview": "Confirmation of H. pylori eradication can be obtained with a stool or breath test. For patients who are scheduled for an upper endoscopy following treatment, eradication can be determined at the time of endoscopy. Testing should be done at least 4 weeks after treatment is completed. Patients should not take a PPI or bismuth for 4 weeks prior to confirmation testing.",
+          "summaryDescription": "Approach to eradication confirmation:",
+          "active": false,
+          "optionType": "single",
+          "options": [
+            {"label": "H. pylori urea breath test", "value": false, "id": "200-summary-1", "refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}},
+            {"label": "H. pylori stool antigen test", "value": false, "id": "200-summary-2","refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}},
+            {"label": "Eradication will be confirmed during upper endoscopy", "value": false, "id": "200-summary-3","refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}},
+            {"label": "Refer to gastroenterology for eradicatin confirmation", "value": false, "id": "200-summary-4","refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}},
+            {"label": "Refer to infectious disease specialist for eradicatin confirmation", "value": false, "id": "200-summary-5","refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}},
+            {"label": "Eradication confirmation using an approach other than options provided (this approach may differ from the recommendations of UpToDate)", "value": false, "id": "200-summary-6", "refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}}
+          ],
+          "content": "<hr><br><a href='http://alltopics.utd.com/contents/7?anchor=#H2834839008' target='_blank'>Confirmation of H. pylori eradication</a><strong> by stool or breath test following treatment is recommended.</strong> (<span class='pathway-add-info' id='q7-200-100'>Additional information</span>)",
+          "addInfoId":"q7-200-100",
+          "addInfoContent": "<br><a href='http://alltopics.utd.com/contents/7?anchor=#H2834839008'>Confirmation of H. pylori eradication</a> by stool or breath test following treatment is recommended. For patients who are scheduled for an upper endoscopy following treatment, eradication can be determined at the time of endoscopy. For other patients, an H. pylori test should be done at least 4 weeks after treatment is completed. Patients should not take a PPI or bismuth for 4 weeks prior to confirmation testing.<br><br>Note, in patients with peptic ulcers, antisecretory therapy with a PPI may need to be continued for more than 4 weeks (thus delaying eradication confirmation). For patients with complicated duodenal ulcers (eg, ulcers with bleeding, gastric outlet obstruction, ulcer penetration, or perforation),&nbsp;the PPI should be continued for 4 to 8 weeks. For patients with gastric ulcers, the PPI should be continued for 8 to 12 weeks.<br>",
+          "disclaimer": ""
+        },{
+          "question": "",
+          "num": 7,
+          "summaryDescription": "Proton pump inhibitor chosen:",
+          "active": false,
+          "optionType": "single",
+          "options": [
+            {"label": "Esomeprazole 40 mg orally once daily for 14 days", "value": false, "id": "200-question-7-1", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Esomeprazole 20 mg orally once daily for 14 days", "value": false, "id": "200-question-7-2", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Lansoprazole 30 mg orally once daily for 14 days", "value": false, "id": "200-question-7-3", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Omeprazole 20 mg orally once daily for 14 days", "value": false, "id": "200-question-7-4", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Pantoprazole 40 mg orally once daily for 14 days", "value": false, "id": "200-question-7-5", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Rabeprazole 20 mg orally once daily for 14 days", "value": false, "id": "200-question-7-6", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Proton pump inhibitor at a dose or frequency other than the options provided (this approach may differ from the recommendations of UpToDate)", "value": false, "id": "200-question-7-7", "addSummary": {"type":"medication", "value": ""}}
+          ],
+          "content": "<br><strong>Choose one proton pump inhibitor (PPI) from the following options (discontinue prior PPI dosing, if patient has been taking a PPI).<br><br></strong>If esomeprazole is chosen, it can either be given as 40 mg once daily or 20 mg twice daily. The Toronto Consensus guideline considers 20 mg twice daily to be the standard dose for the treatment of H. pylori.<br>\",\n          \"disclaimer\": \"<hr><em>The drug doses given in Interactive Clinical Guidelines generally represent the doses that are suggested for patients who do not require dose adjustments due to factors such as comorbid illnesses, organ dysfunction, drug interactions, or other reasons. In addition, some of the medications used in this Interactive Clinical Guideline should not be used concurrently with other medications because of drug interactions, so the interacting medication may need to be held during therapy or an alternative antibiotic regimen chosen (refer to <span guid=\"841ef303-e75a-4118-8083-4662cd7027bf\" class=\"reference reference_enabled\">UpToDate content</span> for more details on alternative regimens).&nbsp;Consult a clinical drug reference, appropriate UpToDate topic reviews, and/or other resources to confirm the appropriate dosing for a given patient.</em><hr>"
+        },{
+          "question": "Select combination pill that contains tetracycline, metronidazole, and bismuth subcitrate (brand name: Pylera).",
+          "num": 8,
+          "summaryDescription": "Combination pill that contains tetracycline, metronidazole, and bismuth subcitrate:",
+          "active": false,
+          "optionType": "single",
+          "options": [
+            {"label": "Pylera 3 capsules orally four times daily for 14 days", "value": false, "id": "200-question-9-1", "addSummary": {"type":"medication", "value": ""}},
+            {"label": "Pylera at a dose or frequency other than the option provided (this approach may differ from the recommendations of UpToDate)", "value": false, "id": "200-question-9-2", "addSummary": {"type":"medication", "value": ""}}
+          ],
+          "content": "",
+          "disclaimer": ""
+        },{
+          "question": "Choose a testing approach.",
+          "num": 9,
+          "summaryOverview": "Confirmation of H. pylori eradication can be obtained with a stool or breath test. For patients who are scheduled for an upper endoscopy following treatment, eradication can be determined at the time of endoscopy. Testing should be done at least 4 weeks after treatment is completed. Patients should not take a PPI or bismuth for 4 weeks prior to confirmation testing.",
+          "summaryDescription": "Approach to eradication confirmation:",
+          "active": false,
+          "optionType": "single",
+          "options": [
+            {"label": "H. pylori urea breath test", "value": false, "id": "200-summary-1", "refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}},
+            {"label": "H. pylori stool antigen test", "value": false, "id": "200-summary-2","refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}},
+            {"label": "Eradication will be confirmed during upper endoscopy", "value": false, "id": "200-summary-3","refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}},
+            {"label": "Refer to gastroenterology for eradicatin confirmation", "value": false, "id": "200-summary-4","refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}},
+            {"label": "Refer to infectious disease specialist for eradicatin confirmation", "value": false, "id": "200-summary-5","refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}},
+            {"label": "Eradication confirmation using an approach other than options provided (this approach may differ from the recommendations of UpToDate)", "value": false, "id": "200-summary-6", "refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}}
+          ],
+          "content": "<hr><br><a href='http://alltopics.utd.com/contents/7?anchor=#H2834839008' target='_blank'>Confirmation of H. pylori eradication</a><strong> by stool or breath test following treatment is recommended.</strong> (<span class='pathway-add-info' id='q7-200-100'>Additional information</span>)",
+          "addInfoId":"q7-200-100",
+          "addInfoContent": "<br><a href='http://alltopics.utd.com/contents/7?anchor=#H2834839008'>Confirmation of H. pylori eradication</a> by stool or breath test following treatment is recommended. For patients who are scheduled for an upper endoscopy following treatment, eradication can be determined at the time of endoscopy. For other patients, an H. pylori test should be done at least 4 weeks after treatment is completed. Patients should not take a PPI or bismuth for 4 weeks prior to confirmation testing.<br><br>Note, in patients with peptic ulcers, antisecretory therapy with a PPI may need to be continued for more than 4 weeks (thus delaying eradication confirmation). For patients with complicated duodenal ulcers (eg, ulcers with bleeding, gastric outlet obstruction, ulcer penetration, or perforation),&nbsp;the PPI should be continued for 4 to 8 weeks. For patients with gastric ulcers, the PPI should be continued for 8 to 12 weeks.<br>",
+          "disclaimer": ""
+        },{
+          "question": "Select a testing approach.",
+          "summaryOverview": "Confirmation of H. pylori eradication can be obtained with a stool or breath test. For patients who are scheduled for an upper endoscopy following treatment, eradication can be determined at the time of endoscopy. Testing should be done at least 4 weeks after treatment is completed. Patients should not take a PPI or bismuth for 4 weeks prior to confirmation testing.",
+          "summaryDescription": "Approach to eradication confirmation:",
+          "active": false,
+          "optionType": "single",
+          "options": [
+            {"label": "H. pylori urea breath test", "value": false, "id": "200-summary-1", "refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}},
+            {"label": "H. pylori stool antigen test", "value": false, "id": "200-summary-2", "refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}},
+            {"label": "Eradication will be confirmed during upper endoscopy", "value": false, "id": "200-summary-3", "refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}},
+            {"label": "Refer to gastroenterology for eradicatin confirmation", "value": false, "id": "200-summary-4", "refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}},
+            {"label": "Refer to infectious disease specialist for eradicatin confirmation", "value": false, "id": "200-summary-5", "refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}},
+            {"label": "Eradication confirmation using an approach other than options provided (this approach may differ from the recommendations of UpToDate)", "value": false, "id": "200-summary-6", "refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}}
+          ],
+          "content": "<br><span guid=\"500A8A6A-54E9-0C08-3C9B-87EB619D632D\" class=\"reference reference_enabled\">Confirmation of H. pylori eradication</span> by stool or breath test following treatment is recommended. For patients who are scheduled for an upper endoscopy following treatment, eradication can be determined at the time of endoscopy. For other patients, an H. pylori test should be done at least 4 weeks after treatment is completed. Patients should not take a PPI or bismuth for 4 weeks prior to confirmation testing.<br><br>Note, in patients with <span guid=\"8B3A5944-4CA9-7A11-216D-DAB79B23ACC9\" class=\"reference reference_enabled\">peptic ulcers</span>, antisecretory therapy with a PPI may need to be continued for more than 4 weeks (thus delaying eradication confirmation). For patients with complicated duodenal ulcers (eg, ulcers with bleeding, gastric outlet obstruction, ulcer penetration, or perforation),&nbsp;the PPI should be continued for 4 to 8 weeks. For patients with gastric ulcers, the PPI should be continued for 8 to 12 weeks.<br>",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+    },{
+      "type": "question",
+      "active": false,
+      "statement": "Penicillin allergy?",
+      "status" : "off",
+      "ref": "100",
+      "response": "No",
+      "id": "201",
+      "questions": [
+        {
+          "question": "Is the patient allergic to penicillin or amoxicillin?",
+          "summaryDescription": "Patient allergic to penicillin or amoxicillin:",
+          "active": true,
+          "optionType": "single",
+          "options": [
+            {"label": "Yes", "value": false, "id": "201-300"},
+            {"label": "No", "value": false, "id": "201-301"}
+          ],
+          "content": "",
+          "disclaimer": ""
+        }
+      ],
+      "updated": ""
+    }], [
+      {
+        "type": "end",
+        "active": false,
+        "statement": "Treat with metronidazole-based triple~therapy and confirm eradication",
+        "status" : "off",
+        "ref": "201",
+        "response": "Yes",
+        "id": "300",
+        "questions": [
+          {
+            "question": "",
+            "num": 0,
+            "summaryDescription": "Management approach choosen:",
+            "active": true,
+            "optionType": "single",
+            "options": [
+              {"label": "Order triple therapy with metronidazole, clarithromycin, and a PPI", "value": false, "id": "300-question-1,2,3,4", "refNode":"node-300-201", "addSummary": {"type":"treatment", "value": ""}},
+              {"label": "Approach other than the option provided (this approach may differ from the recommendations of UpToDate)", "value": false, "id": "300-summary-2", "refNode":"node-300-201", "addSummary": {"type":"treatment", "value": ""}}
+            ],
+            "content": "<br><strong>Triple therapy for 14 days is appropriate for this patient.</strong>(<span class='pathway-add-info' id='q0-300-201'>Additional information</span>)<br><br>Triple therapy for patients who cannot take penicillins includes:<br><ul><li>A proton pump inhibitor (PPI)</li><li>Metronidazole</li><li>Clarithromycin</li></ul><strong>Choose a treatment approach</strong>",
+            "addInfoId":"q0-300-201",
+            "addInfoContent": "<ul><li>Patients should be informed that adherence to treatment is a critical factor in determining the success of eradication therapy.&nbsp;</li><li>Because the regimen includes metronidazole, strict alcohol avoidance should be advised.&nbsp;</li></ul>"
+          },{
+
+          "question": "",
+          "num": 1,
+          "content": "<hr><br><u><div class='pathway-add-info-highlight' id='q2-200-100' >Important drug dosing information</div></u>",
+          "addInfoId": "q2-200-100",
+          "addInfoContent" : "The drug doses given&nbsp;generally&nbsp;represent the doses that are suggested for patients who do not require dose adjustments due to factors such as comorbid illnesses, organ dysfunction, drug interactions, or other reasons. In addition, some of the medications used in this Interactive Clinical Guideline should not be used concurrently with other medications because of drug interactions, so the interacting medication may need to be held during therapy or an alternative antibiotic regimen chosen (refer to&nbsp;<span>UpToDate content</span></span>&nbsp;for more details on alternative regimens).&nbsp;Consult a clinical drug reference, appropriate UpToDate topic reviews, and/or other resources to confirm the appropriate dosing for a given patient."
+        },{
+          "question": "",
+          "num": 2,
+          "summaryDescription": "Proton pump inhibitor chosen:",
+          "active": false,
+          "optionType": "single",
+          "options": [
+            {"label": "Esomeprazole 40 mg orally once daily for 14 days", "value": false, "id": "200-question-2-1", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Esomeprazole 20 mg orally once daily for 14 days", "value": false, "id": "200-question-2-2", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Lansoprazole 30 mg orally once daily for 14 days", "value": false, "id": "200-question-2-3", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Omeprazole 20 mg orally once daily for 14 days", "value": false, "id": "200-question-2-4", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Pantoprazole 40 mg orally once daily for 14 days", "value": false, "id": "200-question-2-5", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Rabeprazole 20 mg orally once daily for 14 days", "value": false, "id": "200-question-2-6", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Proton pump inhibitor at a dose or frequency other than the options provided (this approach may differ from the recommendations of UpToDate)", "value": false, "id": "200-question-2-7", "addSummary": {"type":"medication", "value": ""}}
+          ],
+          "content": "<hr><strong>Choose a PPI</strong> (<span class='pathway-add-info' id='q3-200-100'>Additional information</span>)",
+          "addInfoId": "q3-200-100",
+          "addInfoContent" : "If esomeprazole is chosen, it can either be given as 40 mg once daily or 20 mg twice daily. The Toronto Consensus guideline considers 20 mg twice daily to be the standard dose for the treatment of H. pylori."
+        },{
+          "question": "Select metronidazole.",
+          "num": 3,
+          "summaryDescription": "Metronidazole dose chosen:",
+          "summaryOverview": "The drug doses given in this Interactive Clinical Guideline generally represent the doses that are suggested for patients who do not require dose adjustments due to factors such as comorbid illnesses, organ dysfunction, drug interactions, or other reasons. Consult a clinical drug reference, appropriate UpToDate topic reviews, and/or other resources to confirm the appropriate dosing for a given patient. In addition, some of the medications used in this Interactive Clinical Guideline should not be used concurrently with other medications because of drug interactions, so the interacting medication may need to be held during therapy or an alternative antibiotic regimen chosen (refer to UpToDate content for more details on alternative regimens).",
+          "active": false,
+          "optionType": "single",
+          "options": [
+            {"label": "Metronidazole 250 mg orally four times daily for 14 days", "value": false, "id": "200-question-5-1", "addSummary": {"type":"medication", "value": ""}},
+            {"label": "Metronidazole at a dose or frequency other than the option provided (this approach may differ from the recommendations of UpToDate)", "value": false, "id": "200-question-5-2", "addSummary": {"type":"medication", "value": ""}}
+          ],
+          "content": "<hr>",
+          "disclaimer": ""
+        }, {
+            "question": "Select clarithromycin",
+            "num": 4,
+            "summaryDescription": "Clarithromycin chosen:",
+            "active": false,
+            "optionType": "single",
+            "options": [
+              {"label": "Clarithromycin 500 mg orally twice daily for 14 days", "value": false, "id": "301-question-5-1", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Clarithromycin at a dose or frequency other than the option provided (this approach may differ from the recommendations of UpToDate)", "value": false, "id": "301-question-5-2", "addSummary": {"type":"medication", "value": ""}}
+            ],
+            "content": "<br><strong></strong>",
+            "disclaimer": ""
+          },{
+          "question": "Choose a testing approach.",
+          "num": 5,
+          "summaryOverview": "Confirmation of H. pylori eradication can be obtained with a stool or breath test. For patients who are scheduled for an upper endoscopy following treatment, eradication can be determined at the time of endoscopy. Testing should be done at least 4 weeks after treatment is completed. Patients should not take a PPI or bismuth for 4 weeks prior to confirmation testing.",
+          "summaryDescription": "Approach to eradication confirmation:",
+          "active": false,
+          "optionType": "single",
+          "options": [
+            {"label": "H. pylori urea breath test", "value": false, "id": "200-summary-1", "refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}},
+            {"label": "H. pylori stool antigen test", "value": false, "id": "200-summary-2","refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}},
+            {"label": "Eradication will be confirmed during upper endoscopy", "value": false, "id": "200-summary-3","refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}},
+            {"label": "Refer to gastroenterology for eradicatin confirmation", "value": false, "id": "200-summary-4","refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}},
+            {"label": "Refer to infectious disease specialist for eradicatin confirmation", "value": false, "id": "200-summary-5","refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}},
+            {"label": "Eradication confirmation using an approach other than options provided (this approach may differ from the recommendations of UpToDate)", "value": false, "id": "200-summary-6", "refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}}
+          ],
+          "content": "<hr><br><a href='http://alltopics.utd.com/contents/7?anchor=#H2834839008' target='_blank'>Confirmation of H. pylori eradication</a><strong> by stool or breath test following treatment is recommended.</strong> (<span class='pathway-add-info' id='q7-200-100'>Additional information</span>)",
+          "addInfoId":"q7-200-100",
+          "addInfoContent": "<br><a href='http://alltopics.utd.com/contents/7?anchor=#H2834839008'>Confirmation of H. pylori eradication</a> by stool or breath test following treatment is recommended. For patients who are scheduled for an upper endoscopy following treatment, eradication can be determined at the time of endoscopy. For other patients, an H. pylori test should be done at least 4 weeks after treatment is completed. Patients should not take a PPI or bismuth for 4 weeks prior to confirmation testing.<br><br>Note, in patients with peptic ulcers, antisecretory therapy with a PPI may need to be continued for more than 4 weeks (thus delaying eradication confirmation). For patients with complicated duodenal ulcers (eg, ulcers with bleeding, gastric outlet obstruction, ulcer penetration, or perforation),&nbsp;the PPI should be continued for 4 to 8 weeks. For patients with gastric ulcers, the PPI should be continued for 8 to 12 weeks.<br>",
+          "disclaimer": ""
+        }
+        ],
+        "disclaimer": "",
+        "updated": ""
+
+      },{
+        "type": "end",
+        "active": false,
+        "statement": "Treat with amoxicillin-based triple~therapy and confirm eradication",
+        "status" : "off",
+        "ref": "201",
+        "response": "No",
+        "id": "301",
+        "questions": [
+          {
+            "question": "",
+            "num": 0,
+            "summaryDescription": "Management approach choosen:",
+            "active": true,
+            "optionType": "single",
+            "options": [
+              {"label": "Order triple therapy with metronidazole, clarithromycin, and a PPI", "value": false, "id": "301-question-1,2,3,4", "addSummary": {"type":"treatment", "value": ""}},
+              {"label": "Approach other than the option provided (this approach may differ from the recommendations of UpToDate)", "value": false, "id": "301-summary-2", "refNode":"node-301-201", "addSummary": {"type":"treatment", "value": ""}}
+            ],
+            "content": "<br><strong>Triple therapy for 14 days is appropriate for this patient.</strong> (<span class='pathway-add-info' id='q0-301-201'>Additional information</span>)<br><br><strong>Choose a treatment approach.</strong>",
+            "disclaimer": "",
+            "addInfoId":"q0-301-201",
+            "addInfoContent": "Patients should be informed that adherence to treatment is a critical factor in determining the success of eradication therapy."
+          },{
+          "question": "",
+          "num": 1,
+          "content": "<hr><br><u><div class='pathway-add-info-highlight' id='q2-200-100' >Important drug dosing information</div></u>",
+          "addInfoId": "q2-200-100",
+          "addInfoContent" : "The drug doses given&nbsp;generally&nbsp;represent the doses that are suggested for patients who do not require dose adjustments due to factors such as comorbid illnesses, organ dysfunction, drug interactions, or other reasons. In addition, some of the medications used in this Interactive Clinical Guideline should not be used concurrently with other medications because of drug interactions, so the interacting medication may need to be held during therapy or an alternative antibiotic regimen chosen (refer to&nbsp;<span>UpToDate content</span></span>&nbsp;for more details on alternative regimens).&nbsp;Consult a clinical drug reference, appropriate UpToDate topic reviews, and/or other resources to confirm the appropriate dosing for a given patient."
+        },{
+          "question": "",
+          "num": 2,
+          "summaryDescription": "Proton pump inhibitor chosen:",
+          "active": false,
+          "optionType": "single",
+          "options": [
+            {"label": "Esomeprazole 40 mg orally once daily for 14 days", "value": false, "id": "200-question-2-1", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Esomeprazole 20 mg orally once daily for 14 days", "value": false, "id": "200-question-2-2", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Lansoprazole 30 mg orally once daily for 14 days", "value": false, "id": "200-question-2-3", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Omeprazole 20 mg orally once daily for 14 days", "value": false, "id": "200-question-2-4", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Pantoprazole 40 mg orally once daily for 14 days", "value": false, "id": "200-question-2-5", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Rabeprazole 20 mg orally once daily for 14 days", "value": false, "id": "200-question-2-6", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Proton pump inhibitor at a dose or frequency other than the options provided (this approach may differ from the recommendations of UpToDate)", "value": false, "id": "200-question-2-7", "addSummary": {"type":"medication", "value": ""}}
+          ],
+          "content": "<hr><strong>Choose a PPI</strong> (<span class='pathway-add-info' id='q3-200-100'>Additional information</span>)",
+          "addInfoId": "q3-200-100",
+          "addInfoContent" : "If esomeprazole is chosen, it can either be given as 40 mg once daily or 20 mg twice daily. The Toronto Consensus guideline considers 20 mg twice daily to be the standard dose for the treatment of H. pylori."
+        },{
+            "question": "Select amoxicillin",
+            "num": 3,
+            "summaryDescription": "Amoxicillin chosen:",
+            "active": false,
+            "optionType": "single",
+            "options": [
+              {"label": "Amoxicillin 1000 mg orally twice daily for 14 days", "value": false, "id": "301-question-4-1", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Amoxicillin at a dose or frequency other than the option provided (this approach may differ from the recommendations of UpToDate)", "value": false, "id": "301-question-4-2", "addSummary": {"type":"medication", "value": ""}}
+            ],
+            "content": "<br><strong></strong>",
+            "disclaimer": ""
+          },{
+            "question": "Select clarithromycin",
+            "num": 4,
+            "summaryDescription": "Clarithromycin chosen:",
+            "active": false,
+            "optionType": "single",
+            "options": [
+              {"label": "Clarithromycin 500 mg orally twice daily for 14 days", "value": false, "id": "301-question-5-1", "addSummary": {"type":"medication", "value": ""}},
+              {"label": "Clarithromycin at a dose or frequency other than the option provided (this approach may differ from the recommendations of UpToDate)", "value": false, "id": "301-question-5-2", "addSummary": {"type":"medication", "value": ""}}
+            ],
+            "content": "<br><strong></strong>",
+            "disclaimer": ""
+          }, {
+          "question": "Choose a testing approach.",
+          "num": 5,
+          "summaryOverview": "Confirmation of H. pylori eradication can be obtained with a stool or breath test. For patients who are scheduled for an upper endoscopy following treatment, eradication can be determined at the time of endoscopy. Testing should be done at least 4 weeks after treatment is completed. Patients should not take a PPI or bismuth for 4 weeks prior to confirmation testing.",
+          "summaryDescription": "Approach to eradication confirmation:",
+          "active": false,
+          "optionType": "single",
+          "options": [
+            {"label": "H. pylori urea breath test", "value": false, "id": "200-summary-1", "refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}},
+            {"label": "H. pylori stool antigen test", "value": false, "id": "200-summary-2","refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}},
+            {"label": "Eradication will be confirmed during upper endoscopy", "value": false, "id": "200-summary-3","refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}},
+            {"label": "Refer to gastroenterology for eradicatin confirmation", "value": false, "id": "200-summary-4","refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}},
+            {"label": "Refer to infectious disease specialist for eradicatin confirmation", "value": false, "id": "200-summary-5","refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}},
+            {"label": "Eradication confirmation using an approach other than options provided (this approach may differ from the recommendations of UpToDate)", "value": false, "id": "200-summary-6", "refNode":"node-200-100", "addSummary": {"type":"treatment", "value": ""}}
+          ],
+          "content": "<hr><br><a href='http://alltopics.utd.com/contents/7?anchor=#H2834839008' target='_blank'>Confirmation of H. pylori eradication</a><strong> by stool or breath test following treatment is recommended.</strong> (<span class='pathway-add-info' id='q7-200-100'>Additional information</span>)",
+          "addInfoId":"q7-200-100",
+          "addInfoContent": "<br><a href='http://alltopics.utd.com/contents/7?anchor=#H2834839008'>Confirmation of H. pylori eradication</a> by stool or breath test following treatment is recommended. For patients who are scheduled for an upper endoscopy following treatment, eradication can be determined at the time of endoscopy. For other patients, an H. pylori test should be done at least 4 weeks after treatment is completed. Patients should not take a PPI or bismuth for 4 weeks prior to confirmation testing.<br><br>Note, in patients with peptic ulcers, antisecretory therapy with a PPI may need to be continued for more than 4 weeks (thus delaying eradication confirmation). For patients with complicated duodenal ulcers (eg, ulcers with bleeding, gastric outlet obstruction, ulcer penetration, or perforation),&nbsp;the PPI should be continued for 4 to 8 weeks. For patients with gastric ulcers, the PPI should be continued for 8 to 12 weeks.<br>",
+          "disclaimer": ""
+        }
+        ],
+        "updated": ""
+      }] , [
+        {
+          "type": "summary",
+          "active": false,
+          "statement": "Interactive Clinical Guideline Complete",
+          "status" : "off",
+          "ref": "9000",
+          "response": "Yes",
+          "id": "summary",
+          "questions": [
+            {
+              "question": "",
+              "active": false,
+              "optionType": "single",
+              "options": [
+
+              ],
+              "content": ""
+            }
+          ],
+          "disclaimer": "",
+          "updated": ""
+        }
+      ]
+    ],
+  "mainTitle" : "Helicobacter pylori: Initial treatment for adults"
+}
